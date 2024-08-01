@@ -1,270 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Glamoursome</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/4d509971f0.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../tailwind.js"></script>
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="../style.css" />
-  </head>
 
-  <body class="bg-zinc-50 antialiased roboto-regular">
-    <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
-      <!-- desktop navbar   -->
-      <nav
-        class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden"
-      >
-        <!-- logo  -->
-        <div class="cursor-pointer">
-          <a src="/" class="text-xl font-bold">GLAMOURSOME</a>
-        </div>
-        <ul class="flex gap-5 uppercase">
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">Home</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">Fashion</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">relationship</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">lifestyle</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">beauty</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">travel</li></a
-          >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glamoursome</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/4d509971f0.js" crossorigin="anonymous"></script>
+  <script src="../tailwind.js"></script>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="bg-zinc-50 antialiased roboto-regular">
+  <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
+    <!-- desktop navbar   -->
+    <nav
+      class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden">
+      <!-- logo  -->
+      <div class="cursor-pointer">
+        <a src="/" class="text-xl font-bold">GLAMOURSOME</a>
+      </div>
+      <ul class="flex gap-5 uppercase">
+        <a src="../index.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Home</li>
+        </a>
+        <a src="/fashion/fashion.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Fashion</li>
+        </a>
+        <a src="/relationship/relationship.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Relationship</li>
+        </a>
+        <a src="/lifestyle/lifestyle.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Lifestyle</li>
+        </a>
+        <a src="/beauty/beauty.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Beauty</li>
+        </a>
+        <a src="#" class="hover:text-red-600">
+          <li class="cursor-pointer">Travel</li>
+        </a>
+      </ul>
+    </nav>
+    <!-- mobile navbar   -->
+    <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
+      <!-- logo  -->
+      <div>
+        <p class="text-xl font-bold">GLAMOURSOME</p>
+      </div>
+      <div class="off-screen-menu p-5 flex flex-col gap-5">
+        <ul class="w-full open-dropdown flex-col items-center">
+          <div>
+            <p class="text-xl font-bold">GLAMOURSOME</p>
+          </div>
+          <li>
+            <a src="/index.html" class="hover:text-red-600 cursor-pointer">Home</a>
+          </li>
+          <li>
+            <a src="/fashion/fashion.html" class="hover:text-red-600 cursor-pointer">Fashion</a>
+          </li>
+          <li>
+            <a src="/relationship/relationship.html" class="hover:text-red-600 cursor-pointer">Relationship</a>
+          </li>
+          <li>
+            <a src="/lifestyle/lifestyle.html" class="hover:text-red-600 cursor-pointer">Lifestyle</a>
+          </li>
+          <li>
+            <a src="/beauty/beauty.html" class="hover:text-red-600 cursor-pointer">Beauty</a>
+          </li>
+          <li>
+            <a src="#" class="hover:text-red-600 cursor-pointer">Travel</a>
+          </li>
         </ul>
-      </nav>
-      <!-- mobile navbar   -->
-      <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
-        <!-- logo  -->
-        <div>
-          <p class="text-xl font-bold">GLAMOURSOME</p>
+      </div>
+      <nav>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="off-screen-menu p-5 flex flex-col gap-5">
-          <ul class="w-full open-dropdown flex-col items-center">
-            <div>
-              <p class="text-xl font-bold">GLAMOURSOME</p>
-            </div>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">Home</a>
+      </nav>
+    </nav>
+  </header>
+  <!-- Banner 3 Card Section  -->
+  <section class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24">
+    <div class="grid grid-cols-1 md:grid-cols-10 gap-5 relative">
+      <article class="md:col-span-7 space-y-8 text-zinc-900 text-justify">
+        <img src="../assets/beauty/b2.jpg" alt="blog" class="w-full h-[20rem] md:h-[28rem] object-cover" />
+        <div>
+          <p class="text-sm capitalize text-red-600">skincare</p>
+          <h2 class="text-3xl font-bold mb-3">
+            Sundays Are For Skincare: Weekly Rituals for Healthy Skin
+          </h2>
+          <p class="text-sm text-zinc-400">01/08/2024 | By Sam</p>
+        </div>
+        <p class="text-zinc-600">
+          Sundays are the perfect day to indulge in a skincare ritual that rejuvenates and prepares your skin for the
+          week ahead. Establishing a weekly skincare routine not only enhances your skin’s health but also offers a
+          moment of relaxation and self-care amidst your busy schedule. This guide explores essential skincare rituals
+          that you can incorporate into your Sunday routine for glowing, healthy skin.
+        </p>
+        <p class="text-2xl text-center">
+          “The best foundation you can wear is glowing healthy skin.” – Unknown
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Cleansing: The First Step to Fresh Skin</h4>
+        <p class="text-zinc-600">
+          The foundation of any effective skincare routine begins with cleansing. Start your Sunday ritual by thoroughly
+          cleansing your skin to remove impurities, excess oil, and makeup residues. This step ensures that your skin is
+          prepped for the subsequent treatments and products.
+        </p>
+        <p class="text-zinc-600">
+          Choose a cleanser that suits your skin type—whether it’s a gentle foaming cleanser, a hydrating cream, or a
+          purifying gel. Use lukewarm water to help open your pores and allow the cleanser to effectively penetrate your
+          skin. Cleanse your face in gentle, upward motions to avoid pulling or irritating the skin.
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Exfoliation: Smoothing and Renewing</h4>
+        <p class="text-zinc-600">
+          Exfoliation is a key component of your weekly skincare routine, as it helps to remove dead skin cells, unclog
+          pores, and promote cell renewal. This process reveals fresher, smoother skin and enhances the effectiveness of
+          other skincare products.
+        </p>
+        <p class="text-zinc-600">
+          Opt for a chemical exfoliant with ingredients like alpha-hydroxy acids (AHAs) or beta-hydroxy acids (BHAs) for
+          a more gentle and effective approach. Alternatively, a physical exfoliant with fine granules can also be used,
+          but be cautious to avoid over-exfoliating, which can irritate the skin. Exfoliate once a week to maintain a
+          healthy balance and avoid damaging your skin’s natural barrier.
+        </p>
+        <div class="grid grid-cols-2 gap-5">
+          <img src="../assets/beauty/b21.jpg" alt="blog" class="w-full h-64 object-cover" />
+          <img src="../assets/beauty/b22.jpg" alt="blog" class="w-full h-64 object-cover" />
+        </div>
+        <h4 class="mt-5 text-xl font-bold">Masking: Deep Nourishment</h4>
+        <p class="text-zinc-600">
+          Incorporating a face mask into your Sunday routine provides an opportunity for deep nourishment and targeted
+          treatment. Depending on your skin’s needs, choose a mask that addresses specific concerns such as hydration,
+          brightening, or detoxifying.
+        </p>
+        <p class="text-zinc-600">
+          Apply the mask evenly to your face, avoiding the eye area, and allow it to sit for the recommended time. Use
+          this moment to relax and unwind, as the mask works its magic. After removing the mask, gently rinse your face
+          with lukewarm water and follow up with a toner to balance your skin’s pH.
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Toning: Balancing and Refreshing</h4>
+        <p class="text-zinc-600">
+          Toning is an essential step in your skincare routine that helps to balance your skin’s pH, refine pores, and
+          prepare it for further treatment. A good toner also adds an extra layer of hydration and ensures that any
+          residual impurities from cleansing are removed.
+        </p>
+        <p class="text-zinc-600">
+          Choose a toner that suits your skin type—whether it’s hydrating, soothing, or clarifying. Apply the toner with
+          a cotton pad or by gently patting it onto your skin with your hands. This step helps to refresh and prime your
+          skin for serums and moisturizers.
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Moisturizing: Locking in Hydration</h4>
+        <p class="text-zinc-600">
+          Moisturizing is crucial for maintaining a healthy and radiant complexion. It helps to lock in hydration,
+          repair the skin barrier, and keep your skin soft and supple. Depending on your skin type, choose a moisturizer
+          that offers the right level of hydration and nourishment.
+        </p>
+        <p class="text-zinc-600">
+          For a Sunday skincare ritual, consider using a richer, more hydrating moisturizer or night cream that provides
+          extra nourishment. Apply the moisturizer evenly to your face and neck, using gentle upward strokes. This step
+          ensures that your skin remains hydrated and protected throughout the night.
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Self-Care and Relaxation</h4>
+        <p class="text-zinc-600">
+          Your Sunday skincare routine is not just about the products you use but also about creating a relaxing and
+          enjoyable experience. Take this time to unwind and indulge in self-care practices that contribute to your
+          overall well-being.
+        </p>
+        <p class="text-zinc-600">
+          Light some candles, play soothing music, or read a book while you pamper yourself. Incorporate practices like
+          facial massage or deep breathing to enhance relaxation. Creating a tranquil atmosphere helps to elevate your
+          skincare ritual from a routine to a cherished self-care moment.
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Consistency and Patience</h4>
+        <p class="text-zinc-600">
+          Consistency is key to achieving and maintaining healthy skin. Make your Sunday skincare ritual a regular part
+          of your routine and be patient with the results. Skincare improvements take time, and a steady, dedicated
+          approach yields the best outcomes.
+        </p>
+        <p class="text-zinc-600">
+          Track your progress and make adjustments as needed based on how your skin responds. Celebrate the small
+          victories and enjoy the benefits of a well-maintained skincare routine. Embrace the journey and take pride in
+          the positive changes you see in your skin over time.
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Conclusion</h4>
+        <p class="text-zinc-600">
+          Sundays are the perfect opportunity to indulge in a skincare routine that rejuvenates and prepares your skin
+          for the week ahead. By incorporating essential steps such as cleansing, exfoliating, masking, toning, and
+          moisturizing, you can achieve a glowing and healthy complexion.
+        </p>
+        <p class="text-zinc-600">
+          Remember that skincare is not just about the products you use but also about creating a relaxing and enjoyable
+          self-care experience. Embrace consistency, be patient, and enjoy the process of nurturing your skin. As the
+          unknown quote beautifully states, “The best foundation you can wear is glowing healthy skin.” Let your Sunday
+          skincare ritual be a celebration of self-care and radiance.
+        </p>
+      </article>
+
+
+
+      <aside class="md:col-span-3 space-y-5 h-full">
+        <!-- aside Countries  -->
+        <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
+          <h6 class="text-xl font-bold mb-3">Latest Blogs</h6>
+          <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
+            <div class="w-16 h-full bg-red-600 rounded-xl"></div>
+          </div>
+          <ul class="space-y-5 flex flex-col capitalize">
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/beauty/b1.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <h2 class="text-lg font-bold line-clamp-2">
+                  Glowy Golden Girl: Embracing Radiant Beauty Inside & Out
+                </h2>
+                <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+              </div>
             </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">Fashion</a>
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/beauty/b2.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <h2 class="text-lg font-bold line-clamp-2">
+                  Sundays Are For Skincare: Weekly Rituals for Healthy Skin
+                </h2>
+                <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+              </div>
             </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer"
-                >relationship</a
-              >
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/beauty/b3.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <h2 class="text-lg font-bold line-clamp-2">
+                  Beauty From Nature: Exploring Organic and Sustainable Beauty Products
+                </h2>
+                <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+              </div>
             </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">lifestyle</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">beauty</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">travel</a>
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/beauty/b4.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <h2 class="text-lg font-bold line-clamp-2">
+                  Pretty Much Imperfect: Celebrating Authentic Beauty in All Its Forms
+                </h2>
+                <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+              </div>
             </li>
           </ul>
         </div>
-        <nav>
-          <div class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </nav>
-      </nav>
-    </header>
-    <!-- Banner 3 Card Section  -->
-    <section
-      class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24"
-    >
-      <div class="grid grid-cols-1 md:grid-cols-10 gap-5 relative">
-        <article class="md:col-span-7 space-y-8 text-zinc-900 text-justify">
-            <img
-              src="../assets/beauty/b2.jpg"
-              alt="blog"
-              class="w-full h-[20rem] md:h-[28rem] object-cover"
-            />
-            <div>
-              <p class="text-sm capitalize text-red-600">skincare</p>
-              <h2 class="text-3xl font-bold mb-3">
-                Sundays Are For Skincare: Weekly Rituals for Healthy Skin
-              </h2>
-              <p class="text-sm text-zinc-400">01/08/2024 | By Sam</p>
-            </div>
-            <p class="text-zinc-600">
-              Sundays are the perfect day to indulge in a skincare ritual that rejuvenates and prepares your skin for the week ahead. Establishing a weekly skincare routine not only enhances your skin’s health but also offers a moment of relaxation and self-care amidst your busy schedule. This guide explores essential skincare rituals that you can incorporate into your Sunday routine for glowing, healthy skin.
-            </p>
-            <p class="text-2xl text-center">
-              “The best foundation you can wear is glowing healthy skin.” – Unknown
-            </p>
-            <h4 class="mt-5 text-xl font-bold">Cleansing: The First Step to Fresh Skin</h4>
-            <p class="text-zinc-600">
-              The foundation of any effective skincare routine begins with cleansing. Start your Sunday ritual by thoroughly cleansing your skin to remove impurities, excess oil, and makeup residues. This step ensures that your skin is prepped for the subsequent treatments and products.
-            </p>
-            <p class="text-zinc-600">
-              Choose a cleanser that suits your skin type—whether it’s a gentle foaming cleanser, a hydrating cream, or a purifying gel. Use lukewarm water to help open your pores and allow the cleanser to effectively penetrate your skin. Cleanse your face in gentle, upward motions to avoid pulling or irritating the skin.
-            </p>
-            <h4 class="mt-5 text-xl font-bold">Exfoliation: Smoothing and Renewing</h4>
-            <p class="text-zinc-600">
-              Exfoliation is a key component of your weekly skincare routine, as it helps to remove dead skin cells, unclog pores, and promote cell renewal. This process reveals fresher, smoother skin and enhances the effectiveness of other skincare products.
-            </p>
-            <p class="text-zinc-600">
-              Opt for a chemical exfoliant with ingredients like alpha-hydroxy acids (AHAs) or beta-hydroxy acids (BHAs) for a more gentle and effective approach. Alternatively, a physical exfoliant with fine granules can also be used, but be cautious to avoid over-exfoliating, which can irritate the skin. Exfoliate once a week to maintain a healthy balance and avoid damaging your skin’s natural barrier.
-            </p>
-            <div class="grid grid-cols-2 gap-5">
-              <img
-                src="../assets/beauty/b21.jpg"
-                alt="blog"
-                class="w-full h-64 object-cover"
-              />
-              <img
-                src="../assets/beauty/b22.jpg"
-                alt="blog"
-                class="w-full h-64 object-cover"
-              />
-            </div>
-            <h4 class="mt-5 text-xl font-bold">Masking: Deep Nourishment</h4>
-            <p class="text-zinc-600">
-              Incorporating a face mask into your Sunday routine provides an opportunity for deep nourishment and targeted treatment. Depending on your skin’s needs, choose a mask that addresses specific concerns such as hydration, brightening, or detoxifying.
-            </p>
-            <p class="text-zinc-600">
-              Apply the mask evenly to your face, avoiding the eye area, and allow it to sit for the recommended time. Use this moment to relax and unwind, as the mask works its magic. After removing the mask, gently rinse your face with lukewarm water and follow up with a toner to balance your skin’s pH.
-            </p>
-            <h4 class="mt-5 text-xl font-bold">Toning: Balancing and Refreshing</h4>
-            <p class="text-zinc-600">
-              Toning is an essential step in your skincare routine that helps to balance your skin’s pH, refine pores, and prepare it for further treatment. A good toner also adds an extra layer of hydration and ensures that any residual impurities from cleansing are removed.
-            </p>
-            <p class="text-zinc-600">
-              Choose a toner that suits your skin type—whether it’s hydrating, soothing, or clarifying. Apply the toner with a cotton pad or by gently patting it onto your skin with your hands. This step helps to refresh and prime your skin for serums and moisturizers.
-            </p>
-            <h4 class="mt-5 text-xl font-bold">Moisturizing: Locking in Hydration</h4>
-            <p class="text-zinc-600">
-              Moisturizing is crucial for maintaining a healthy and radiant complexion. It helps to lock in hydration, repair the skin barrier, and keep your skin soft and supple. Depending on your skin type, choose a moisturizer that offers the right level of hydration and nourishment.
-            </p>
-            <p class="text-zinc-600">
-              For a Sunday skincare ritual, consider using a richer, more hydrating moisturizer or night cream that provides extra nourishment. Apply the moisturizer evenly to your face and neck, using gentle upward strokes. This step ensures that your skin remains hydrated and protected throughout the night.
-            </p>
-            <h4 class="mt-5 text-xl font-bold">Self-Care and Relaxation</h4>
-            <p class="text-zinc-600">
-              Your Sunday skincare routine is not just about the products you use but also about creating a relaxing and enjoyable experience. Take this time to unwind and indulge in self-care practices that contribute to your overall well-being.
-            </p>
-            <p class="text-zinc-600">
-              Light some candles, play soothing music, or read a book while you pamper yourself. Incorporate practices like facial massage or deep breathing to enhance relaxation. Creating a tranquil atmosphere helps to elevate your skincare ritual from a routine to a cherished self-care moment.
-            </p>
-            <h4 class="mt-5 text-xl font-bold">Consistency and Patience</h4>
-            <p class="text-zinc-600">
-              Consistency is key to achieving and maintaining healthy skin. Make your Sunday skincare ritual a regular part of your routine and be patient with the results. Skincare improvements take time, and a steady, dedicated approach yields the best outcomes.
-            </p>
-            <p class="text-zinc-600">
-              Track your progress and make adjustments as needed based on how your skin responds. Celebrate the small victories and enjoy the benefits of a well-maintained skincare routine. Embrace the journey and take pride in the positive changes you see in your skin over time.
-            </p>
-            <h4 class="mt-5 text-xl font-bold">Conclusion</h4>
-            <p class="text-zinc-600">
-              Sundays are the perfect opportunity to indulge in a skincare routine that rejuvenates and prepares your skin for the week ahead. By incorporating essential steps such as cleansing, exfoliating, masking, toning, and moisturizing, you can achieve a glowing and healthy complexion. 
-            </p>
-            <p class="text-zinc-600">
-              Remember that skincare is not just about the products you use but also about creating a relaxing and enjoyable self-care experience. Embrace consistency, be patient, and enjoy the process of nurturing your skin. As the unknown quote beautifully states, “The best foundation you can wear is glowing healthy skin.” Let your Sunday skincare ritual be a celebration of self-care and radiance.
-            </p>
-          </article>
-          
-          
+      </aside>
+    </div>
+  </section>
 
-        <aside class="md:col-span-3 space-y-5 h-full">
-          <!-- aside Countries  -->
-          <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
-            <h6 class="text-xl font-bold mb-3">Latest Blogs</h6>
-            <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
-              <div class="w-16 h-full bg-red-600 rounded-xl"></div>
-            </div>
-            <ul class="space-y-5 flex flex-col capitalize">
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="../assets/beauty/b1.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Glowy Golden Girl: Embracing Radiant Beauty Inside & Out
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
-                </div>
-              </li>
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="../assets/beauty/b2.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Sundays Are For Skincare: Weekly Rituals for Healthy Skin
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
-                </div>
-              </li>
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="../assets/beauty/b3.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Beauty From Nature: Exploring Organic and Sustainable Beauty Products
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
-                </div>
-              </li>
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="../assets/beauty/b4.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Pretty Much Imperfect: Celebrating Authentic Beauty in All Its Forms
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </aside>
-      </div>
-    </section>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../swiper.js"></script>
+  <script src="../index.js"></script>
+</body>
 
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../swiper.js"></script>
-    <script src="../index.js"></script>
-  </body>
 </html>

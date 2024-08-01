@@ -1,315 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Glamoursome</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/4d509971f0.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../tailwind.js"></script>
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="../style.css" />
-  </head>
 
-  <body class="bg-zinc-50 antialiased roboto-regular">
-    <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
-      <!-- desktop navbar   -->
-      <nav
-        class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden"
-      >
-        <!-- logo  -->
-        <div class="cursor-pointer">
-          <a src="/" class="text-xl font-bold">GLAMOURSOME</a>
-        </div>
-        <ul class="flex gap-5 uppercase">
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">Home</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">Fashion</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">relationship</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">lifestyle</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">beauty</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">travel</li></a
-          >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glamoursome</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/4d509971f0.js" crossorigin="anonymous"></script>
+  <script src="../tailwind.js"></script>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="bg-zinc-50 antialiased roboto-regular">
+  <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
+    <!-- desktop navbar   -->
+    <nav
+      class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden">
+      <!-- logo  -->
+      <div class="cursor-pointer">
+        <a src="/" class="text-xl font-bold">GLAMOURSOME</a>
+      </div>
+      <ul class="flex gap-5 uppercase">
+        <a src="../index.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Home</li>
+        </a>
+        <a src="/fashion/fashion.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Fashion</li>
+        </a>
+        <a src="/relationship/relationship.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Relationship</li>
+        </a>
+        <a src="/lifestyle/lifestyle.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Lifestyle</li>
+        </a>
+        <a src="/beauty/beauty.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Beauty</li>
+        </a>
+        <a src="#" class="hover:text-red-600">
+          <li class="cursor-pointer">Travel</li>
+        </a>
+      </ul>
+    </nav>
+    <!-- mobile navbar   -->
+    <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
+      <!-- logo  -->
+      <div>
+        <p class="text-xl font-bold">GLAMOURSOME</p>
+      </div>
+      <div class="off-screen-menu p-5 flex flex-col gap-5">
+        <ul class="w-full open-dropdown flex-col items-center">
+          <div>
+            <p class="text-xl font-bold">GLAMOURSOME</p>
+          </div>
+          <li>
+            <a src="/index.html" class="hover:text-red-600 cursor-pointer">Home</a>
+          </li>
+          <li>
+            <a src="/fashion/fashion.html" class="hover:text-red-600 cursor-pointer">Fashion</a>
+          </li>
+          <li>
+            <a src="/relationship/relationship.html" class="hover:text-red-600 cursor-pointer">Relationship</a>
+          </li>
+          <li>
+            <a src="/lifestyle/lifestyle.html" class="hover:text-red-600 cursor-pointer">Lifestyle</a>
+          </li>
+          <li>
+            <a src="/beauty/beauty.html" class="hover:text-red-600 cursor-pointer">Beauty</a>
+          </li>
+          <li>
+            <a src="#" class="hover:text-red-600 cursor-pointer">Travel</a>
+          </li>
         </ul>
-      </nav>
-      <!-- mobile navbar   -->
-      <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
-        <!-- logo  -->
-        <div>
-          <p class="text-xl font-bold">GLAMOURSOME</p>
+      </div>
+      <nav>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="off-screen-menu p-5 flex flex-col gap-5">
-          <ul class="w-full open-dropdown flex-col items-center">
-            <div>
-              <p class="text-xl font-bold">GLAMOURSOME</p>
-            </div>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">Home</a>
+      </nav>
+    </nav>
+  </header>
+  <!-- Banner 3 Card Section  -->
+  <section class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24">
+    <div class="grid grid-cols-1 md:grid-cols-10 gap-5 relative">
+      <article class="md:col-span-7 space-y-8 text-zinc-900 text-justify">
+        <img src="../assets/beauty/b4.jpg" alt="blog" class="w-full h-[20rem] md:h-[28rem] object-cover" />
+        <div>
+          <p class="text-sm capitalize text-red-600">beauty</p>
+          <h2 class="text-3xl font-bold mb-3">
+            Pretty Much Imperfect: Celebrating Authentic Beauty in All Its
+            Forms
+          </h2>
+          <p class="text-sm text-zinc-400">01/08/2024 | By Sam</p>
+        </div>
+        <p class="text-zinc-600">
+          In a world that often celebrates unrealistic beauty standards and
+          perfection, embracing and celebrating authentic beauty in all its
+          forms is a powerful act of self-love and acceptance. True beauty
+          goes beyond flawless appearances and embraces the unique qualities
+          that make each person distinct. This guide explores the concept of
+          authentic beauty, encouraging you to appreciate and celebrate your
+          imperfections as part of your unique charm.
+        </p>
+        <p class="text-2xl text-center">
+          “Beauty begins the moment you decide to be yourself.” – Coco Chanel
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Redefining Beauty Standards</h4>
+        <p class="text-zinc-600">
+          Traditional beauty standards often emphasize a narrow definition of
+          perfection, which can create unrealistic expectations and contribute
+          to feelings of inadequacy. In contrast, authentic beauty celebrates
+          individuality and embraces imperfections as integral aspects of who
+          we are.
+        </p>
+        <p class="text-zinc-600">
+          By redefining beauty standards, we shift the focus from conforming
+          to societal ideals to appreciating the diverse range of features
+          that make each person unique. Embracing this broader perspective
+          allows us to see beauty in the imperfect and unconventional,
+          fostering a more inclusive and empowering view of self-worth.
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Embracing Imperfections</h4>
+        <p class="text-zinc-600">
+          Imperfections are what make us human and contribute to our
+          individual beauty. Whether it’s a scar, a birthmark, or uneven skin
+          tone, these features tell a story and add character to our
+          appearance. Embracing imperfections involves shifting our
+          perspective from seeing them as flaws to recognizing them as
+          distinctive elements that contribute to our unique beauty.
+        </p>
+        <p class="text-zinc-600">
+          Practice self-compassion and challenge negative self-talk by
+          focusing on the positive aspects of your appearance and personality.
+          Celebrate the traits that set you apart and remind yourself that
+          true beauty lies in authenticity and self-acceptance.
+        </p>
+        <div class="grid grid-cols-2 gap-5">
+          <img src="../assets/beauty/b41.jpg" alt="blog" class="w-full h-64 object-cover" />
+          <img src="../assets/beauty/b42.jpg" alt="blog" class="w-full h-64 object-cover" />
+        </div>
+        <h4 class="mt-5 text-xl font-bold">The Power of Self-Acceptance</h4>
+        <p class="text-zinc-600">
+          Self-acceptance is a crucial component of celebrating authentic
+          beauty. It involves acknowledging and embracing all aspects of
+          ourselves, including our perceived flaws and imperfections. When we
+          practice self-acceptance, we create a foundation for genuine
+          self-confidence and inner peace.
+        </p>
+        <p class="text-zinc-600">
+          Engage in activities that foster self-love, such as affirmations,
+          mindfulness, and journaling. Surround yourself with supportive
+          people who uplift and encourage you. By nurturing a positive
+          self-image and embracing your true self, you radiate confidence and
+          authenticity, which are key elements of true beauty.
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Celebrating Diversity</h4>
+        <p class="text-zinc-600">
+          Beauty is not a one-size-fits-all concept; it is diverse and
+          multifaceted. Celebrating diversity means appreciating the wide
+          range of appearances, cultures, and experiences that contribute to
+          the rich tapestry of human beauty. Recognize and honor the
+          differences that make each person unique, and challenge stereotypes
+          and biases that limit our understanding of beauty.
+        </p>
+        <p class="text-zinc-600">
+          Engage with media and communities that promote diverse
+          representations of beauty. Support brands and initiatives that
+          celebrate inclusivity and challenge conventional norms. By embracing
+          and celebrating diversity, we create a more accepting and vibrant
+          world where everyone can feel valued and beautiful.
+        </p>
+        <h4 class="mt-5 text-xl font-bold">
+          Beauty Through Confidence and Kindness
+        </h4>
+        <p class="text-zinc-600">
+          Confidence and kindness are powerful contributors to authentic
+          beauty. When we feel confident in ourselves and treat others with
+          kindness, we enhance our overall presence and appeal. Confidence
+          emanates from within and reflects how we perceive and carry
+          ourselves, while kindness fosters positive connections and enriches
+          our interactions with others.
+        </p>
+        <p class="text-zinc-600">
+          Practice self-care and engage in activities that boost your
+          self-esteem. Show kindness to yourself and others, and cultivate a
+          positive mindset. By embodying confidence and kindness, you not only
+          enhance your own beauty but also inspire and uplift those around
+          you.
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Conclusion</h4>
+        <p class="text-zinc-600">
+          Celebrating authentic beauty involves embracing imperfections,
+          practicing self-acceptance, and appreciating the diverse expressions
+          of beauty that make each person unique. By redefining beauty
+          standards and fostering a positive self-image, we contribute to a
+          more inclusive and empowering view of beauty.
+        </p>
+        <p class="text-zinc-600">
+          As Coco Chanel wisely said, “Beauty begins the moment you decide to
+          be yourself.” Embrace your authentic self, celebrate your
+          individuality, and radiate confidence and kindness. In doing so, you
+          not only enhance your own beauty but also inspire others to
+          appreciate and celebrate their own unique qualities.
+        </p>
+      </article>
+
+      <aside class="md:col-span-3 space-y-5 h-full">
+        <!-- aside Countries  -->
+        <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
+          <h6 class="text-xl font-bold mb-3">Latest Blogs</h6>
+          <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
+            <div class="w-16 h-full bg-red-600 rounded-xl"></div>
+          </div>
+          <ul class="space-y-5 flex flex-col capitalize">
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/beauty/b1.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <h2 class="text-lg font-bold line-clamp-2">
+                  Glowy Golden Girl: Embracing Radiant Beauty Inside & Out
+                </h2>
+                <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+              </div>
             </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">Fashion</a>
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/beauty/b2.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <h2 class="text-lg font-bold line-clamp-2">
+                  Sundays Are For Skincare: Weekly Rituals for Healthy Skin
+                </h2>
+                <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+              </div>
             </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer"
-                >relationship</a
-              >
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/beauty/b3.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <h2 class="text-lg font-bold line-clamp-2">
+                  Beauty From Nature: Exploring Organic and Sustainable Beauty
+                  Products
+                </h2>
+                <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+              </div>
             </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">lifestyle</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">beauty</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">travel</a>
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/beauty/b4.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <h2 class="text-lg font-bold line-clamp-2">
+                  Pretty Much Imperfect: Celebrating Authentic Beauty in All
+                  Its Forms
+                </h2>
+                <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+              </div>
             </li>
           </ul>
         </div>
-        <nav>
-          <div class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </nav>
-      </nav>
-    </header>
-    <!-- Banner 3 Card Section  -->
-    <section
-      class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24"
-    >
-      <div class="grid grid-cols-1 md:grid-cols-10 gap-5 relative">
-        <article class="md:col-span-7 space-y-8 text-zinc-900 text-justify">
-          <img
-            src="../assets/beauty/b4.jpg"
-            alt="blog"
-            class="w-full h-[20rem] md:h-[28rem] object-cover"
-          />
-          <div>
-            <p class="text-sm capitalize text-red-600">beauty</p>
-            <h2 class="text-3xl font-bold mb-3">
-              Pretty Much Imperfect: Celebrating Authentic Beauty in All Its
-              Forms
-            </h2>
-            <p class="text-sm text-zinc-400">01/08/2024 | By Sam</p>
-          </div>
-          <p class="text-zinc-600">
-            In a world that often celebrates unrealistic beauty standards and
-            perfection, embracing and celebrating authentic beauty in all its
-            forms is a powerful act of self-love and acceptance. True beauty
-            goes beyond flawless appearances and embraces the unique qualities
-            that make each person distinct. This guide explores the concept of
-            authentic beauty, encouraging you to appreciate and celebrate your
-            imperfections as part of your unique charm.
-          </p>
-          <p class="text-2xl text-center">
-            “Beauty begins the moment you decide to be yourself.” – Coco Chanel
-          </p>
-          <h4 class="mt-5 text-xl font-bold">Redefining Beauty Standards</h4>
-          <p class="text-zinc-600">
-            Traditional beauty standards often emphasize a narrow definition of
-            perfection, which can create unrealistic expectations and contribute
-            to feelings of inadequacy. In contrast, authentic beauty celebrates
-            individuality and embraces imperfections as integral aspects of who
-            we are.
-          </p>
-          <p class="text-zinc-600">
-            By redefining beauty standards, we shift the focus from conforming
-            to societal ideals to appreciating the diverse range of features
-            that make each person unique. Embracing this broader perspective
-            allows us to see beauty in the imperfect and unconventional,
-            fostering a more inclusive and empowering view of self-worth.
-          </p>
-          <h4 class="mt-5 text-xl font-bold">Embracing Imperfections</h4>
-          <p class="text-zinc-600">
-            Imperfections are what make us human and contribute to our
-            individual beauty. Whether it’s a scar, a birthmark, or uneven skin
-            tone, these features tell a story and add character to our
-            appearance. Embracing imperfections involves shifting our
-            perspective from seeing them as flaws to recognizing them as
-            distinctive elements that contribute to our unique beauty.
-          </p>
-          <p class="text-zinc-600">
-            Practice self-compassion and challenge negative self-talk by
-            focusing on the positive aspects of your appearance and personality.
-            Celebrate the traits that set you apart and remind yourself that
-            true beauty lies in authenticity and self-acceptance.
-          </p>
-          <div class="grid grid-cols-2 gap-5">
-            <img
-              src="../assets/beauty/b41.jpg"
-              alt="blog"
-              class="w-full h-64 object-cover"
-            />
-            <img
-              src="../assets/beauty/b42.jpg"
-              alt="blog"
-              class="w-full h-64 object-cover"
-            />
-          </div>
-          <h4 class="mt-5 text-xl font-bold">The Power of Self-Acceptance</h4>
-          <p class="text-zinc-600">
-            Self-acceptance is a crucial component of celebrating authentic
-            beauty. It involves acknowledging and embracing all aspects of
-            ourselves, including our perceived flaws and imperfections. When we
-            practice self-acceptance, we create a foundation for genuine
-            self-confidence and inner peace.
-          </p>
-          <p class="text-zinc-600">
-            Engage in activities that foster self-love, such as affirmations,
-            mindfulness, and journaling. Surround yourself with supportive
-            people who uplift and encourage you. By nurturing a positive
-            self-image and embracing your true self, you radiate confidence and
-            authenticity, which are key elements of true beauty.
-          </p>
-          <h4 class="mt-5 text-xl font-bold">Celebrating Diversity</h4>
-          <p class="text-zinc-600">
-            Beauty is not a one-size-fits-all concept; it is diverse and
-            multifaceted. Celebrating diversity means appreciating the wide
-            range of appearances, cultures, and experiences that contribute to
-            the rich tapestry of human beauty. Recognize and honor the
-            differences that make each person unique, and challenge stereotypes
-            and biases that limit our understanding of beauty.
-          </p>
-          <p class="text-zinc-600">
-            Engage with media and communities that promote diverse
-            representations of beauty. Support brands and initiatives that
-            celebrate inclusivity and challenge conventional norms. By embracing
-            and celebrating diversity, we create a more accepting and vibrant
-            world where everyone can feel valued and beautiful.
-          </p>
-          <h4 class="mt-5 text-xl font-bold">
-            Beauty Through Confidence and Kindness
-          </h4>
-          <p class="text-zinc-600">
-            Confidence and kindness are powerful contributors to authentic
-            beauty. When we feel confident in ourselves and treat others with
-            kindness, we enhance our overall presence and appeal. Confidence
-            emanates from within and reflects how we perceive and carry
-            ourselves, while kindness fosters positive connections and enriches
-            our interactions with others.
-          </p>
-          <p class="text-zinc-600">
-            Practice self-care and engage in activities that boost your
-            self-esteem. Show kindness to yourself and others, and cultivate a
-            positive mindset. By embodying confidence and kindness, you not only
-            enhance your own beauty but also inspire and uplift those around
-            you.
-          </p>
-          <h4 class="mt-5 text-xl font-bold">Conclusion</h4>
-          <p class="text-zinc-600">
-            Celebrating authentic beauty involves embracing imperfections,
-            practicing self-acceptance, and appreciating the diverse expressions
-            of beauty that make each person unique. By redefining beauty
-            standards and fostering a positive self-image, we contribute to a
-            more inclusive and empowering view of beauty.
-          </p>
-          <p class="text-zinc-600">
-            As Coco Chanel wisely said, “Beauty begins the moment you decide to
-            be yourself.” Embrace your authentic self, celebrate your
-            individuality, and radiate confidence and kindness. In doing so, you
-            not only enhance your own beauty but also inspire others to
-            appreciate and celebrate their own unique qualities.
-          </p>
-        </article>
+      </aside>
+    </div>
+  </section>
 
-        <aside class="md:col-span-3 space-y-5 h-full">
-          <!-- aside Countries  -->
-          <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
-            <h6 class="text-xl font-bold mb-3">Latest Blogs</h6>
-            <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
-              <div class="w-16 h-full bg-red-600 rounded-xl"></div>
-            </div>
-            <ul class="space-y-5 flex flex-col capitalize">
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="../assets/beauty/b1.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Glowy Golden Girl: Embracing Radiant Beauty Inside & Out
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
-                </div>
-              </li>
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="../assets/beauty/b2.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Sundays Are For Skincare: Weekly Rituals for Healthy Skin
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
-                </div>
-              </li>
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="../assets/beauty/b3.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Beauty From Nature: Exploring Organic and Sustainable Beauty
-                    Products
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
-                </div>
-              </li>
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="../assets/beauty/b4.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Pretty Much Imperfect: Celebrating Authentic Beauty in All
-                    Its Forms
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </aside>
-      </div>
-    </section>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../swiper.js"></script>
+  <script src="../index.js"></script>
+</body>
 
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../swiper.js"></script>
-    <script src="../index.js"></script>
-  </body>
 </html>

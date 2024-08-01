@@ -1,274 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Glamoursome</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/4d509971f0.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../tailwind.js"></script>
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="../style.css" />
-  </head>
 
-  <body class="bg-zinc-50 antialiased roboto-regular">
-    <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
-      <!-- desktop navbar   -->
-      <nav
-        class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden"
-      >
-        <!-- logo  -->
-        <div class="cursor-pointer">
-          <a src="/" class="text-xl font-bold">GLAMOURSOME</a>
-        </div>
-        <ul class="flex gap-5 uppercase">
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">Home</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">Fashion</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">relationship</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">lifestyle</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">beauty</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">travel</li></a
-          >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glamoursome</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/4d509971f0.js" crossorigin="anonymous"></script>
+  <script src="../tailwind.js"></script>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="bg-zinc-50 antialiased roboto-regular">
+  <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
+    <!-- desktop navbar   -->
+    <nav
+      class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden">
+      <!-- logo  -->
+      <div class="cursor-pointer">
+        <a src="/" class="text-xl font-bold">GLAMOURSOME</a>
+      </div>
+      <ul class="flex gap-5 uppercase">
+        <a src="../index.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Home</li>
+        </a>
+        <a src="/fashion/fashion.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Fashion</li>
+        </a>
+        <a src="/relationship/relationship.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Relationship</li>
+        </a>
+        <a src="/lifestyle/lifestyle.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Lifestyle</li>
+        </a>
+        <a src="/beauty/beauty.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Beauty</li>
+        </a>
+        <a src="#" class="hover:text-red-600">
+          <li class="cursor-pointer">Travel</li>
+        </a>
+      </ul>
+    </nav>
+    <!-- mobile navbar   -->
+    <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
+      <!-- logo  -->
+      <div>
+        <p class="text-xl font-bold">GLAMOURSOME</p>
+      </div>
+      <div class="off-screen-menu p-5 flex flex-col gap-5">
+        <ul class="w-full open-dropdown flex-col items-center">
+          <div>
+            <p class="text-xl font-bold">GLAMOURSOME</p>
+          </div>
+          <li>
+            <a src="/index.html" class="hover:text-red-600 cursor-pointer">Home</a>
+          </li>
+          <li>
+            <a src="/fashion/fashion.html" class="hover:text-red-600 cursor-pointer">Fashion</a>
+          </li>
+          <li>
+            <a src="/relationship/relationship.html" class="hover:text-red-600 cursor-pointer">Relationship</a>
+          </li>
+          <li>
+            <a src="/lifestyle/lifestyle.html" class="hover:text-red-600 cursor-pointer">Lifestyle</a>
+          </li>
+          <li>
+            <a src="/beauty/beauty.html" class="hover:text-red-600 cursor-pointer">Beauty</a>
+          </li>
+          <li>
+            <a src="#" class="hover:text-red-600 cursor-pointer">Travel</a>
+          </li>
         </ul>
-      </nav>
-      <!-- mobile navbar   -->
-      <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
-        <!-- logo  -->
-        <div>
-          <p class="text-xl font-bold">GLAMOURSOME</p>
+      </div>
+      <nav>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="off-screen-menu p-5 flex flex-col gap-5">
-          <ul class="w-full open-dropdown flex-col items-center">
-            <div>
-              <p class="text-xl font-bold">GLAMOURSOME</p>
-            </div>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">Home</a>
+      </nav>
+    </nav>
+  </header>
+  <!-- Banner 3 Card Section  -->
+  <section class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24">
+    <div class="grid grid-cols-1 md:grid-cols-10 gap-5 relative">
+      <article class="md:col-span-7 space-y-8 text-zinc-900 text-justify">
+        <img src="../assets/relationship/r4.jpg" alt="blog" class="w-full h-[20rem] md:h-[28rem] object-cover" />
+        <div>
+          <p class="text-sm capitalize text-red-600">relationship</p>
+          <h2 class="text-3xl font-bold mb-3">
+            Solo & Satisfied: Embracing Singlehood While Open to Love
+          </h2>
+          <p class="text-sm text-zinc-400">01/08/2024 | By Sam</p>
+        </div>
+        <p class="text-zinc-600">
+          In a society that often glorifies romantic relationships, embracing singlehood can be a powerful and
+          fulfilling choice. Being single provides an opportunity to focus on self-growth, pursue personal passions, and
+          cultivate a deep sense of satisfaction and contentment. However, being open to love while enjoying the single
+          life is equally important. This guide explores how to embrace singlehood, maintain a positive outlook, and
+          remain open to love and connection.
+        </p>
+        <p class="text-2xl text-center">
+          “To love oneself is the beginning of a lifelong romance.” – Oscar Wilde
+        </p>
+        <h4 class="mt-5 text-xl font-bold">The Power of Self-Love</h4>
+        <p class="text-zinc-600">
+          Self-love is the foundation of a fulfilling life, whether single or in a relationship. It involves
+          appreciating your own worth, taking care of your needs, and nurturing a positive self-image. Embracing
+          singlehood allows you to focus on self-love without distractions, creating a solid base for future
+          relationships.
+        </p>
+        <p class="text-zinc-600">
+          Practicing self-love involves setting healthy boundaries, engaging in activities that bring you joy, and being
+          kind to yourself. It’s about recognizing your strengths and accepting your imperfections. This self-acceptance
+          fosters a sense of inner peace and confidence, making you more resilient and content.
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Exploring Personal Passions and Interests</h4>
+        <p class="text-zinc-600">
+          Singlehood provides the freedom to explore your passions and interests without compromise. It’s a time to
+          discover what truly makes you happy and pursue activities that bring fulfillment and joy. Whether it’s
+          traveling, taking up a new hobby, or advancing your career, embracing these pursuits enriches your life.
+        </p>
+        <p class="text-zinc-600">
+          Engaging in activities that you love not only brings satisfaction but also helps in building a strong sense of
+          self. It’s about investing in your personal growth and creating a life that you enjoy independently. This
+          sense of fulfillment makes you more attractive and confident when you’re open to love.
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Building Strong Relationships with Friends and Family</h4>
+        <p class="text-zinc-600">
+          While romantic relationships are significant, the bonds you share with friends and family are equally
+          important. Singlehood offers an opportunity to strengthen these connections and build a supportive network.
+          These relationships provide love, support, and companionship, enriching your life.
+        </p>
+        <p class="text-zinc-600">
+          Spending quality time with loved ones, engaging in meaningful conversations, and creating shared experiences
+          can deepen these bonds. It’s about valuing and nurturing the relationships that bring joy and support. This
+          strong network provides a sense of belonging and community.
+        </p>
+        <div class="grid grid-cols-2 gap-5">
+          <img src="../assets/relationship/r41.jpg" alt="blog" class="w-full h-64 object-cover" />
+          <img src="../assets/relationship/r42.jpg" alt="blog" class="w-full h-64 object-cover" />
+        </div>
+        <h4 class="mt-5 text-xl font-bold">Maintaining a Positive Mindset</h4>
+        <p class="text-zinc-600">
+          Embracing singlehood with a positive mindset is crucial. It’s about viewing this phase as an opportunity for
+          growth and self-discovery rather than a period of waiting for a partner. A positive outlook enhances your
+          overall well-being and makes you more open to new experiences and connections.
+        </p>
+        <p class="text-zinc-600">
+          Practicing gratitude, focusing on the present moment, and celebrating your achievements are ways to maintain
+          positivity. It’s about finding joy in the little things and appreciating the freedom and opportunities that
+          come with being single. This mindset shift transforms singlehood into a rewarding and enriching experience.
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Being Open to Love and Connection</h4>
+        <p class="text-zinc-600">
+          While embracing singlehood, it’s important to remain open to love and connection. Being single doesn’t mean
+          closing yourself off to potential relationships. It’s about being open to meeting new people and experiencing
+          love in its various forms while maintaining your sense of self.
+        </p>
+        <p class="text-zinc-600">
+          Being open to love involves letting go of preconceived notions and being willing to take emotional risks. It’s
+          about approaching potential relationships with curiosity and an open heart. This openness allows you to
+          connect with others meaningfully while preserving your individuality and self-worth.
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Finding Balance Between Independence and Connection</h4>
+        <p class="text-zinc-600">
+          Balancing independence and connection is key to enjoying singlehood while being open to love. It’s about
+          maintaining your autonomy and self-sufficiency while building meaningful relationships. This balance ensures
+          that you don’t lose yourself in the pursuit of love.
+        </p>
+        <p class="text-zinc-600">
+          Embracing independence means enjoying your own company, making decisions that align with your values, and
+          pursuing your goals. At the same time, being open to connection involves building relationships based on
+          mutual respect, support, and shared interests. This balance creates a fulfilling and harmonious life.
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Investing in Personal Growth</h4>
+        <p class="text-zinc-600">
+          Singlehood is an ideal time for personal growth and self-improvement. Investing in yourself not only enhances
+          your life but also prepares you for future relationships. It’s about becoming the best version of yourself,
+          which in turn attracts positive and fulfilling connections.
+        </p>
+        <p class="text-zinc-600">
+          Pursuing education, developing new skills, and focusing on physical and mental well-being are ways to invest
+          in personal growth. This investment enhances your confidence, self-esteem, and overall happiness. It’s about
+          creating a life that you love independently, making you more content and attractive.
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Embracing the Journey</h4>
+        <p class="text-zinc-600">
+          Embracing the journey of singlehood with an open heart and mind leads to a fulfilling and enriching life. It’s
+          about appreciating the present moment, valuing your independence, and being open to love and connection. This
+          journey is unique and personal, filled with opportunities for growth, joy, and meaningful relationships.
+        </p>
+        <h4 class="mt-5 text-xl font-bold">Conclusion</h4>
+        <p class="text-zinc-600">
+          Embracing singlehood while being open to love involves cultivating self-love, exploring personal passions, and
+          building strong relationships with friends and family. Maintaining a positive mindset, being open to
+          connection, and finding balance between independence and relationships are key aspects of this journey.
+          Investing in personal growth and embracing the journey with an open heart leads to a fulfilling and satisfying
+          life.
+        </p>
+        <p class="text-zinc-600">
+          In the words of Oscar Wilde, “To love oneself is the beginning of a lifelong romance.” By embracing these
+          principles, you can enjoy the beauty of singlehood while remaining open to love and connection, creating a
+          life that is rich, rewarding, and full of possibilities.
+        </p>
+      </article>
+
+
+      <aside class="md:col-span-3 space-y-5 h-full">
+        <!-- aside Countries  -->
+        <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
+          <h6 class="text-xl font-bold mb-3">Latest Blogs</h6>
+          <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
+            <div class="w-16 h-full bg-red-600 rounded-xl"></div>
+          </div>
+          <ul class="space-y-5 flex flex-col capitalize">
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/relationship/r1.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <h2 class="text-lg font-bold line-clamp-2">
+                  Navigating Modern Love: A Guide to Healthy Relationships
+                </h2>
+                <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+              </div>
             </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">Fashion</a>
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/relationship/r2.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <h2 class="text-lg font-bold line-clamp-2">
+                  From First Dates to Forever: Mastering the Art of Connection
+                </h2>
+                <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+              </div>
             </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer"
-                >relationship</a
-              >
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/relationship/r3.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <h2 class="text-lg font-bold line-clamp-2">
+                  Rediscovering Romance: Reigniting Passion in Long-Term
+                  Relationships
+                </h2>
+                <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+              </div>
             </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">lifestyle</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">beauty</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">travel</a>
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/relationship/r4.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <h2 class="text-lg font-bold line-clamp-2">
+                  Solo & Satisfied: Embracing Singlehood While Open to Love
+                </h2>
+                <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+              </div>
             </li>
           </ul>
         </div>
-        <nav>
-          <div class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </nav>
-      </nav>
-    </header>
-    <!-- Banner 3 Card Section  -->
-    <section
-      class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24"
-    >
-      <div class="grid grid-cols-1 md:grid-cols-10 gap-5 relative">
-        <article class="md:col-span-7 space-y-8 text-zinc-900 text-justify">
-            <img
-              src="../assets/relationship/r4.jpg"
-              alt="blog"
-              class="w-full h-[20rem] md:h-[28rem] object-cover"
-            />
-            <div>
-              <p class="text-sm capitalize text-red-600">relationship</p>
-              <h2 class="text-3xl font-bold mb-3">
-                Solo & Satisfied: Embracing Singlehood While Open to Love
-              </h2>
-              <p class="text-sm text-zinc-400">01/08/2024 | By Sam</p>
-            </div>
-            <p class="text-zinc-600">
-              In a society that often glorifies romantic relationships, embracing singlehood can be a powerful and fulfilling choice. Being single provides an opportunity to focus on self-growth, pursue personal passions, and cultivate a deep sense of satisfaction and contentment. However, being open to love while enjoying the single life is equally important. This guide explores how to embrace singlehood, maintain a positive outlook, and remain open to love and connection.
-            </p>
-            <p class="text-2xl text-center">
-              “To love oneself is the beginning of a lifelong romance.” – Oscar Wilde
-            </p>
-            <h4 class="mt-5 text-xl font-bold">The Power of Self-Love</h4>
-            <p class="text-zinc-600">
-              Self-love is the foundation of a fulfilling life, whether single or in a relationship. It involves appreciating your own worth, taking care of your needs, and nurturing a positive self-image. Embracing singlehood allows you to focus on self-love without distractions, creating a solid base for future relationships.
-            </p>
-            <p class="text-zinc-600">
-              Practicing self-love involves setting healthy boundaries, engaging in activities that bring you joy, and being kind to yourself. It’s about recognizing your strengths and accepting your imperfections. This self-acceptance fosters a sense of inner peace and confidence, making you more resilient and content.
-            </p>
-            <h4 class="mt-5 text-xl font-bold">Exploring Personal Passions and Interests</h4>
-            <p class="text-zinc-600">
-              Singlehood provides the freedom to explore your passions and interests without compromise. It’s a time to discover what truly makes you happy and pursue activities that bring fulfillment and joy. Whether it’s traveling, taking up a new hobby, or advancing your career, embracing these pursuits enriches your life.
-            </p>
-            <p class="text-zinc-600">
-              Engaging in activities that you love not only brings satisfaction but also helps in building a strong sense of self. It’s about investing in your personal growth and creating a life that you enjoy independently. This sense of fulfillment makes you more attractive and confident when you’re open to love.
-            </p>
-            <h4 class="mt-5 text-xl font-bold">Building Strong Relationships with Friends and Family</h4>
-            <p class="text-zinc-600">
-              While romantic relationships are significant, the bonds you share with friends and family are equally important. Singlehood offers an opportunity to strengthen these connections and build a supportive network. These relationships provide love, support, and companionship, enriching your life.
-            </p>
-            <p class="text-zinc-600">
-              Spending quality time with loved ones, engaging in meaningful conversations, and creating shared experiences can deepen these bonds. It’s about valuing and nurturing the relationships that bring joy and support. This strong network provides a sense of belonging and community.
-            </p>
-            <div class="grid grid-cols-2 gap-5">
-              <img
-                src="../assets/relationship/r41.jpg"
-                alt="blog"
-                class="w-full h-64 object-cover"
-              />
-              <img
-                src="../assets/relationship/r42.jpg"
-                alt="blog"
-                class="w-full h-64 object-cover"
-              />
-            </div>
-            <h4 class="mt-5 text-xl font-bold">Maintaining a Positive Mindset</h4>
-            <p class="text-zinc-600">
-              Embracing singlehood with a positive mindset is crucial. It’s about viewing this phase as an opportunity for growth and self-discovery rather than a period of waiting for a partner. A positive outlook enhances your overall well-being and makes you more open to new experiences and connections.
-            </p>
-            <p class="text-zinc-600">
-              Practicing gratitude, focusing on the present moment, and celebrating your achievements are ways to maintain positivity. It’s about finding joy in the little things and appreciating the freedom and opportunities that come with being single. This mindset shift transforms singlehood into a rewarding and enriching experience.
-            </p>
-            <h4 class="mt-5 text-xl font-bold">Being Open to Love and Connection</h4>
-            <p class="text-zinc-600">
-              While embracing singlehood, it’s important to remain open to love and connection. Being single doesn’t mean closing yourself off to potential relationships. It’s about being open to meeting new people and experiencing love in its various forms while maintaining your sense of self.
-            </p>
-            <p class="text-zinc-600">
-              Being open to love involves letting go of preconceived notions and being willing to take emotional risks. It’s about approaching potential relationships with curiosity and an open heart. This openness allows you to connect with others meaningfully while preserving your individuality and self-worth.
-            </p>
-            <h4 class="mt-5 text-xl font-bold">Finding Balance Between Independence and Connection</h4>
-            <p class="text-zinc-600">
-              Balancing independence and connection is key to enjoying singlehood while being open to love. It’s about maintaining your autonomy and self-sufficiency while building meaningful relationships. This balance ensures that you don’t lose yourself in the pursuit of love.
-            </p>
-            <p class="text-zinc-600">
-              Embracing independence means enjoying your own company, making decisions that align with your values, and pursuing your goals. At the same time, being open to connection involves building relationships based on mutual respect, support, and shared interests. This balance creates a fulfilling and harmonious life.
-            </p>
-            <h4 class="mt-5 text-xl font-bold">Investing in Personal Growth</h4>
-            <p class="text-zinc-600">
-              Singlehood is an ideal time for personal growth and self-improvement. Investing in yourself not only enhances your life but also prepares you for future relationships. It’s about becoming the best version of yourself, which in turn attracts positive and fulfilling connections.
-            </p>
-            <p class="text-zinc-600">
-              Pursuing education, developing new skills, and focusing on physical and mental well-being are ways to invest in personal growth. This investment enhances your confidence, self-esteem, and overall happiness. It’s about creating a life that you love independently, making you more content and attractive.
-            </p>
-            <h4 class="mt-5 text-xl font-bold">Embracing the Journey</h4>
-            <p class="text-zinc-600">
-              Embracing the journey of singlehood with an open heart and mind leads to a fulfilling and enriching life. It’s about appreciating the present moment, valuing your independence, and being open to love and connection. This journey is unique and personal, filled with opportunities for growth, joy, and meaningful relationships.
-            </p>
-            <h4 class="mt-5 text-xl font-bold">Conclusion</h4>
-            <p class="text-zinc-600">
-              Embracing singlehood while being open to love involves cultivating self-love, exploring personal passions, and building strong relationships with friends and family. Maintaining a positive mindset, being open to connection, and finding balance between independence and relationships are key aspects of this journey. Investing in personal growth and embracing the journey with an open heart leads to a fulfilling and satisfying life.
-            </p>
-            <p class="text-zinc-600">
-              In the words of Oscar Wilde, “To love oneself is the beginning of a lifelong romance.” By embracing these principles, you can enjoy the beauty of singlehood while remaining open to love and connection, creating a life that is rich, rewarding, and full of possibilities.
-            </p>
-          </article>
-          
-               
-        <aside class="md:col-span-3 space-y-5 h-full">
-          <!-- aside Countries  -->
-          <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
-            <h6 class="text-xl font-bold mb-3">Latest Blogs</h6>
-            <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
-              <div class="w-16 h-full bg-red-600 rounded-xl"></div>
-            </div>
-            <ul class="space-y-5 flex flex-col capitalize">
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="../assets/relationship/r1.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Navigating Modern Love: A Guide to Healthy Relationships
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
-                </div>
-              </li>
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="../assets/relationship/r2.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    From First Dates to Forever: Mastering the Art of Connection
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
-                </div>
-              </li>
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="../assets/relationship/r3.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Rediscovering Romance: Reigniting Passion in Long-Term
-                    Relationships
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
-                </div>
-              </li>
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="../assets/relationship/r4.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Solo & Satisfied: Embracing Singlehood While Open to Love
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </aside>
-      </div>
-    </section>
+      </aside>
+    </div>
+  </section>
 
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../swiper.js"></script>
-    <script src="../index.js"></script>
-  </body>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../swiper.js"></script>
+  <script src="../index.js"></script>
+</body>
+
 </html>
