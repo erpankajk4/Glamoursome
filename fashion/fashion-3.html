@@ -1,280 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Glamoursome</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/4d509971f0.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="tailwind.js"></script>
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
 
-  <body class="bg-zinc-50 antialiased roboto-regular">
-    <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
-      <!-- desktop navbar   -->
-      <nav
-        class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden"
-      >
-        <!-- logo  -->
-        <div class="cursor-pointer">
-          <a src="/" class="text-xl font-bold">GLAMOURSOME</a>
-        </div>
-        <ul class="flex gap-5 uppercase">
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">Home</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">Fashion</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">relationship</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">lifestyle</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">beauty</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">travel</li></a
-          >
-        </ul>
-      </nav>
-      <!-- mobile navbar   -->
-      <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
-        <!-- logo  -->
-        <div>
-          <p class="text-xl font-bold">GLAMOURSOME</p>
-        </div>
-        <div class="off-screen-menu p-5 flex flex-col gap-5">
-          <ul class="w-full open-dropdown flex-col items-center">
-            <div>
-              <p class="text-xl font-bold">GLAMOURSOME</p>
-            </div>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">Home</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">Fashion</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer"
-                >relationship</a
-              >
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">lifestyle</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">beauty</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">travel</a>
-            </li>
-          </ul>
-        </div>
-        <nav>
-          <div class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </nav>
-      </nav>
-    </header>
-    <!-- Banner 3 Card Section  -->
-    <section
-      class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24"
-    >
-      <div class="grid grid-cols-1 md:grid-cols-10 gap-5 relative">
-        <article class="md:col-span-7 space-y-8 text-zinc-900 text-justify">
-          <img
-            src="https://nunforest.com/mite-demo/upload/single/1@2x.jpg"
-            alt="blog"
-            class="w-full h-[20rem] md:h-[28rem] object-cover"
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glamoursome</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/4d509971f0.js" crossorigin="anonymous"></script>
+  <script src="../tailwind.js"></script>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="bg-zinc-50 antialiased roboto-regular">
+  <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
+    <!-- desktop navbar   -->
+    <nav
+      class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden">
+      <!-- logo  -->
+      <div class="cursor-pointer">
+        <a href="/" class="text-xl font-bold">GLAMOURSOME</a>
+      </div>
+      <ul class="flex gap-5 uppercase">
+        <a src="../index.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Home</li>
+        </a>
+        <a src="/fashion/fashion.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Fashion</li>
+        </a>
+        <a src="/relationship/relationship.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Relationship</li>
+        </a>
+        <a src="/lifestyle/lifestyle.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Lifestyle</li>
+        </a>
+        <a src="/beauty/beauty.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Beauty</li>
+        </a>
+        <a src="#" class="hover:text-red-600">
+          <li class="cursor-pointer">Travel</li>
+        </a>
+      </ul>
+    </nav>
+    <!-- mobile navbar   -->
+    <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
+      <!-- logo  -->
+      <div>
+        <p class="text-xl font-bold">GLAMOURSOME</p>
+      </div>
+      <div class="off-screen-menu p-5 flex flex-col gap-5">
+        <ul class="w-full open-dropdown flex-col items-center">
           <div>
-            <p class="text-sm capitalize text-red-600">Fashion</p>
-            <h2 class="text-3xl font-bold mb-3">
-              "2024 Celebrity Fashion Trends: Iconic Moments and Influential Styles"
-            </h2>
-            <p class="text-sm text-zinc-400">01/08/2024 | By Sam</p>
+            <p class="text-xl font-bold">GLAMOURSOME</p>
           </div>
-          <p class="text-zinc-600">
-            In 2024, the realm of celebrity fashion has been a kaleidoscope of creativity, blending traditional elegance with bold innovation. From red carpet glamour to casual street style, celebrities have once again demonstrated their power to set trends and redefine fashion norms. This year, the fashion landscape has been shaped by a series of striking moments and influential styles that reflect broader shifts in the industry. By examining some of the standout fashion choices and emerging trends, we can gain insight into how celebrities are navigating and shaping the world of style.
+          <li>
+            <a src="/index.html" class="hover:text-red-600 cursor-pointer">Home</a>
+          </li>
+          <li>
+            <a src="/fashion/fashion.html" class="hover:text-red-600 cursor-pointer">Fashion</a>
+          </li>
+          <li>
+            <a src="/relationship/relationship.html" class="hover:text-red-600 cursor-pointer">Relationship</a>
+          </li>
+          <li>
+            <a src="/lifestyle/lifestyle.html" class="hover:text-red-600 cursor-pointer">Lifestyle</a>
+          </li>
+          <li>
+            <a src="/beauty/beauty.html" class="hover:text-red-600 cursor-pointer">Beauty</a>
+          </li>
+          <li>
+            <a src="#" class="hover:text-red-600 cursor-pointer">Travel</a>
+          </li>
+        </ul>
+      </div>
+      <nav>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </nav>
+  </header>
+  <!-- Banner 3 Card Section  -->
+  <section class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24">
+    <div class="grid grid-cols-1 md:grid-cols-10 gap-5 relative">
+      <article class="md:col-span-7 space-y-8 text-zinc-900 text-justify">
+        <img src="../assets/fashion/gala2.webp" alt="blog" class="w-full h-[20rem] md:h-[28rem] object-cover" />
+        <div>
+          <p class="text-sm capitalize text-red-600">Fashion</p>
+          <h2 class="text-3xl font-bold mb-3">
+            "2024 Celebrity Fashion Trends: Iconic Moments and Influential Styles"
+          </h2>
+          <p class="text-sm text-zinc-400">01/08/2024 | By Sam</p>
+        </div>
+        <p class="text-zinc-600">
+          In 2024, the realm of celebrity fashion has been a kaleidoscope of creativity, blending traditional elegance
+          with bold innovation. From red carpet glamour to casual street style, celebrities have once again demonstrated
+          their power to set trends and redefine fashion norms. This year, the fashion landscape has been shaped by a
+          series of striking moments and influential styles that reflect broader shifts in the industry. By examining
+          some of the standout fashion choices and emerging trends, we can gain insight into how celebrities are
+          navigating and shaping the world of style.
 
         </p>
-          <p class="text-2xl text-center">
-            This year’s red carpet events have been a showcase of both timeless elegance and modern flair, as celebrities continue to make bold fashion statements. For instance, Zendaya has once again proven her status as a fashion icon with her recent appearances.
+        <p class="text-2xl text-center">
+          This year’s red carpet events have been a showcase of both timeless elegance and modern flair, as celebrities
+          continue to make bold fashion statements. For instance, Zendaya has once again proven her status as a fashion
+          icon with her recent appearances.
         </p>
-          <h4 class="mt-5 text-xl text-bold">
-            Red Carpet Revolution: Timeless Elegance Meets Modern Flair
+        <h4 class="mt-5 text-xl text-bold">
+          Red Carpet Revolution: Timeless Elegance Meets Modern Flair
         </h4>
-          <p class="text-zinc-600">
-            At the Golden Globes, she dazzled in a shimmering gold gown by Valentino. The gown’s high slit and flowing cape created a dramatic, yet graceful silhouette that perfectly balanced classic glamour with contemporary design elements. Zendaya’s choice of a chic updo and understated jewelry allowed the gown to take center stage, emphasizing her ability to merge tradition with modernity effortlessly.
-            <br> Similarly, Timothée Chalamet has continued to redefine men’s red carpet fashion with his recent choices. At the Oscars, he stepped out in a striking velvet suit by Prada. The suit’s asymmetrical jacket, adorned with subtle embellishments, and the deep plum color combined classic tailoring with a touch of avant-garde style. Chalamet’s look was a masterclass in blending traditional elements with contemporary twists, setting a new standard for men’s formalwear and proving that red carpet fashion is not just for women. His ability to navigate between classic and innovative fashion highlights a growing trend where male celebrities are increasingly exploring and embracing diverse style options.
+        <p class="text-zinc-600">
+          At the Golden Globes, she dazzled in a shimmering gold gown by Valentino. The gown’s high slit and flowing
+          cape created a dramatic, yet graceful silhouette that perfectly balanced classic glamour with contemporary
+          design elements. Zendaya’s choice of a chic updo and understated jewelry allowed the gown to take center
+          stage, emphasizing her ability to merge tradition with modernity effortlessly.
+          <br> Similarly, Timothée Chalamet has continued to redefine men’s red carpet fashion with his recent choices.
+          At the Oscars, he stepped out in a striking velvet suit by Prada. The suit’s asymmetrical jacket, adorned with
+          subtle embellishments, and the deep plum color combined classic tailoring with a touch of avant-garde style.
+          Chalamet’s look was a masterclass in blending traditional elements with contemporary twists, setting a new
+          standard for men’s formalwear and proving that red carpet fashion is not just for women. His ability to
+          navigate between classic and innovative fashion highlights a growing trend where male celebrities are
+          increasingly exploring and embracing diverse style options.
 
-<br><br>
-Another significant red carpet moment came from Beyoncé, whose collaboration with Balenciaga has resulted in a collection that merges high fashion with bold, modern aesthetics. While specific red carpet events were not highlighted, the collection’s influence has been evident in various high-profile appearances. Beyoncé’s choices often feature oversized silhouettes, dramatic cuts, and luxurious fabrics, reflecting her powerful influence on fashion. The success of this collaboration underscores the trend of celebrities working closely with high-fashion brands to create collections that resonate with a broad audience, demonstrating how celebrity influence can extend beyond individual events.
-
-
-        </p> <h4 class="mt-5 text-xl text-bold">
-            Street Style Icons: Setting Trends Beyond the Spotlight
-
-        </h4>
-          <p class="text-zinc-600">
-            While red carpet events remain a focal point, celebrity street style has also made significant waves this year. Billie Eilish, known for her distinctive and edgy fashion sense, continues to influence streetwear with her recent collaboration with Off-White. The collection, featuring oversized cargo pants and graphic tees, exemplifies Eilish’s unique approach to blending high fashion with street sensibility. Her ability to merge comfort with bold, statement-making designs has resonated widely, impacting how street style is perceived and embraced by fans and fashion enthusiasts alike. Eilish’s influence is a testament to the power of individual style in shaping broader fashion trends.
-<br>Harry Styles remains another prominent figure in street style, known for his eclectic and gender-fluid fashion choices. This year, Styles has continued to push boundaries with his mix of vintage and contemporary pieces. His outfits often feature playful patterns, bold colors, and unique accessories, blending various fashion genres into cohesive and eye-catching looks. Styles’ approach challenges traditional norms and encourages a more inclusive and experimental approach to fashion. His style exemplifies the growing acceptance of gender fluidity in fashion, where traditional masculine and feminine elements are seamlessly integrated to create dynamic and innovative outfits.
-
-
-        </p> <h4 class="mt-5 text-xl text-bold">
-            Fashion Collaborations: Pushing the Boundaries of Style
-
-
-        </h4>
-          <p class="text-zinc-600">
-            Fashion collaborations between celebrities and designers have continued to be a major trend in 2024, resulting in some of the year’s most talked-about collections. Beyoncé’s partnership with Balenciaga is a prime example of how celebrity influence can shape fashion. The collection, characterized by oversized silhouettes and dramatic cuts, reflects a blend of high fashion with bold, modern aesthetics. Beyoncé’s role in this collaboration underscores the growing trend of celebrities working closely with designers to create impactful collections that resonate with diverse audiences.
-
- <br>Travis Scott’s collaboration with Nike has also captured significant attention, pushing the envelope in sneaker fashion. The collection features innovative designs and limited-edition releases that have generated considerable buzz among sneaker enthusiasts. Scott’s approach to sneaker design, including distressed details and unconventional materials, highlights his ability to merge streetwear with high fashion. This collaboration demonstrates how celebrity partnerships can drive trends and shape markets, particularly in the highly competitive sneaker industry.
-
-<br><br>Kim Kardashian’s Skims brand has further solidified its place in the fashion world with its latest releases. Known for its focus on inclusivity and comfort, Skims has expanded its offerings to include stylish loungewear and shapewear. Kardashian’s influence is evident in the brand’s commitment to both functionality and fashion, making it a favorite among a diverse range of consumers. Skims’ success reflects the trend towards sustainable and inclusive fashion, highlighting the growing demand for products that combine practicality with style.
+          <br><br>
+          Another significant red carpet moment came from Beyoncé, whose collaboration with Balenciaga has resulted in a
+          collection that merges high fashion with bold, modern aesthetics. While specific red carpet events were not
+          highlighted, the collection’s influence has been evident in various high-profile appearances. Beyoncé’s
+          choices often feature oversized silhouettes, dramatic cuts, and luxurious fabrics, reflecting her powerful
+          influence on fashion. The success of this collaboration underscores the trend of celebrities working closely
+          with high-fashion brands to create collections that resonate with a broad audience, demonstrating how
+          celebrity influence can extend beyond individual events.
 
 
         </p>
-          <div class="grid grid-cols-2 gap-5">
-            <img
-              src="https://nunforest.com/mite-demo/upload/single/2@2x.jpg"
-              alt="blog"
-              class="w-full h-64 object-cover"
-            />
-            <img
-              src="https://nunforest.com/mite-demo/upload/single/3@2x.jpg"
-              alt="blog"
-              class="w-full h-64 object-cover"
-            />
-          </div>
-          <p class="text-zinc-600">
-            As we examine the fashion landscape of 2024, several key trends have emerged, reflecting broader shifts in the industry. Bold colors and metallic fabrics have become prominent, with celebrities embracing vibrant hues and shimmering materials. This trend adds a touch of drama and excitement to fashion, making it a year of eye-catching and statement-making outfits. Celestial themes and futuristic elements have also become popular, demonstrating how stars are influencing fashion with their adventurous and forward-thinking choices.
+        <h4 class="mt-5 text-xl text-bold">
+          Street Style Icons: Setting Trends Beyond the Spotlight
+
+        </h4>
+        <p class="text-zinc-600">
+          While red carpet events remain a focal point, celebrity street style has also made significant waves this
+          year. Billie Eilish, known for her distinctive and edgy fashion sense, continues to influence streetwear with
+          her recent collaboration with Off-White. The collection, featuring oversized cargo pants and graphic tees,
+          exemplifies Eilish’s unique approach to blending high fashion with street sensibility. Her ability to merge
+          comfort with bold, statement-making designs has resonated widely, impacting how street style is perceived and
+          embraced by fans and fashion enthusiasts alike. Eilish’s influence is a testament to the power of individual
+          style in shaping broader fashion trends.
+          <br>Harry Styles remains another prominent figure in street style, known for his eclectic and gender-fluid
+          fashion choices. This year, Styles has continued to push boundaries with his mix of vintage and contemporary
+          pieces. His outfits often feature playful patterns, bold colors, and unique accessories, blending various
+          fashion genres into cohesive and eye-catching looks. Styles’ approach challenges traditional norms and
+          encourages a more inclusive and experimental approach to fashion. His style exemplifies the growing acceptance
+          of gender fluidity in fashion, where traditional masculine and feminine elements are seamlessly integrated to
+          create dynamic and innovative outfits.
 
 
         </p>
-          <!-- <h4 class="mt-5 text-xl text-bold">
+        <h4 class="mt-5 text-xl text-bold">
+          Fashion Collaborations: Pushing the Boundaries of Style
+
+
+        </h4>
+        <p class="text-zinc-600">
+          Fashion collaborations between celebrities and designers have continued to be a major trend in 2024, resulting
+          in some of the year’s most talked-about collections. Beyoncé’s partnership with Balenciaga is a prime example
+          of how celebrity influence can shape fashion. The collection, characterized by oversized silhouettes and
+          dramatic cuts, reflects a blend of high fashion with bold, modern aesthetics. Beyoncé’s role in this
+          collaboration underscores the growing trend of celebrities working closely with designers to create impactful
+          collections that resonate with diverse audiences.
+
+          <br>Travis Scott’s collaboration with Nike has also captured significant attention, pushing the envelope in
+          sneaker fashion. The collection features innovative designs and limited-edition releases that have generated
+          considerable buzz among sneaker enthusiasts. Scott’s approach to sneaker design, including distressed details
+          and unconventional materials, highlights his ability to merge streetwear with high fashion. This collaboration
+          demonstrates how celebrity partnerships can drive trends and shape markets, particularly in the highly
+          competitive sneaker industry.
+
+          <br><br>Kim Kardashian’s Skims brand has further solidified its place in the fashion world with its latest
+          releases. Known for its focus on inclusivity and comfort, Skims has expanded its offerings to include stylish
+          loungewear and shapewear. Kardashian’s influence is evident in the brand’s commitment to both functionality
+          and fashion, making it a favorite among a diverse range of consumers. Skims’ success reflects the trend
+          towards sustainable and inclusive fashion, highlighting the growing demand for products that combine
+          practicality with style.
+
+
+        </p>
+        <div class="grid grid-cols-2 gap-5">
+          <img src="../assets/fashion/met3.webp" alt="blog" class="w-full h-64 object-cover" />
+          <img src="../assets/fashion/5.jpg" alt="blog" class="w-full h-64 object-cover" />
+        </div>
+        <p class="text-zinc-600">
+          As we examine the fashion landscape of 2024, several key trends have emerged, reflecting broader shifts in the
+          industry. Bold colors and metallic fabrics have become prominent, with celebrities embracing vibrant hues and
+          shimmering materials. This trend adds a touch of drama and excitement to fashion, making it a year of
+          eye-catching and statement-making outfits. Celestial themes and futuristic elements have also become popular,
+          demonstrating how stars are influencing fashion with their adventurous and forward-thinking choices.
+
+
+        </p>
+        <!-- <h4 class="mt-5 text-xl text-bold">
             Harry Styles’ Eclectic Everyday Looks
 
         </h4> -->
-          <p class="text-zinc-600">
-            Gender fluidity continues to be a significant trend, with celebrities like Harry Styles and Billie Eilish leading the way. The blending of traditionally masculine and feminine elements in clothing reflects a growing acceptance and celebration of diverse gender expressions. This trend is reshaping fashion norms, encouraging a more inclusive and experimental approach to style. It highlights a broader cultural shift towards embracing and celebrating individuality and fluidity in fashion.
-<br>Sustainability remains a major focus, with many celebrities championing eco-friendly brands and practices. The push for sustainable fashion is evident in the increased availability of recycled materials and ethical production methods. Celebrities’ advocacy for sustainability is influencing both high fashion and everyday streetwear, highlighting the importance of environmental consciousness in the industry. This trend reflects a growing awareness of the impact of fashion on the environment and a desire for more responsible and ethical practices.
+        <p class="text-zinc-600">
+          Gender fluidity continues to be a significant trend, with celebrities like Harry Styles and Billie Eilish
+          leading the way. The blending of traditionally masculine and feminine elements in clothing reflects a growing
+          acceptance and celebration of diverse gender expressions. This trend is reshaping fashion norms, encouraging a
+          more inclusive and experimental approach to style. It highlights a broader cultural shift towards embracing
+          and celebrating individuality and fluidity in fashion.
+          <br>Sustainability remains a major focus, with many celebrities championing eco-friendly brands and practices.
+          The push for sustainable fashion is evident in the increased availability of recycled materials and ethical
+          production methods. Celebrities’ advocacy for sustainability is influencing both high fashion and everyday
+          streetwear, highlighting the importance of environmental consciousness in the industry. This trend reflects a
+          growing awareness of the impact of fashion on the environment and a desire for more responsible and ethical
+          practices.
 
 
 
         </p>
-         
-          <h4 class="mt-5 text-xl text-bold">Conclusion</h4>
-          <p class="text-zinc-600">
-            2024 has been a remarkable year for celebrity fashion, characterized by standout moments and evolving trends. From stunning red carpet appearances to influential street style and exciting fashion collaborations, celebrities are redefining the fashion landscape with their bold choices and innovative designs. Their impact extends beyond individual events, shaping broader fashion trends and setting new standards for style. As we continue to follow the dynamic world of fashion, it is clear that celebrity influence will remain a powerful force, driving the industry in new and exciting directions.
+
+        <h4 class="mt-5 text-xl text-bold">Conclusion</h4>
+        <p class="text-zinc-600">
+          2024 has been a remarkable year for celebrity fashion, characterized by standout moments and evolving trends.
+          From stunning red carpet appearances to influential street style and exciting fashion collaborations,
+          celebrities are redefining the fashion landscape with their bold choices and innovative designs. Their impact
+          extends beyond individual events, shaping broader fashion trends and setting new standards for style. As we
+          continue to follow the dynamic world of fashion, it is clear that celebrity influence will remain a powerful
+          force, driving the industry in new and exciting directions.
         </p>
-        </article>
-        <aside class="md:col-span-3 space-y-5 h-full">
-          <!-- aside Countries  -->
-          <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
-            <h6 class="text-xl font-bold mb-3">Latest Blogs</h6>
-            <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
-              <div class="w-16 h-full bg-red-600 rounded-xl"></div>
-            </div>
-            <ul class="space-y-5 flex flex-col capitalize">
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="https://nunforest.com/mite-demo/upload/single/2@2x.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 days | By Pankaj</p>
-                </div>
-              </li>
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="https://nunforest.com/mite-demo/upload/single/2@2x.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 days | By Pankaj</p>
-                </div>
-              </li>
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="https://nunforest.com/mite-demo/upload/single/2@2x.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 days | By Pankaj</p>
-                </div>
-              </li>
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="https://nunforest.com/mite-demo/upload/single/2@2x.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 days | By Pankaj</p>
-                </div>
-              </li>
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="https://nunforest.com/mite-demo/upload/single/2@2x.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 days | By Pankaj</p>
-                </div>
-              </li>
-            </ul>
+      </article>
+      <aside class="md:col-span-3 space-y-5 h-full">
+        <!-- aside Countries  -->
+        <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
+          <h6 class="text-xl font-bold mb-3">Latest Blogs</h6>
+          <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
+            <div class="w-16 h-full bg-red-600 rounded-xl"></div>
           </div>
-        </aside>
-      </div>
-    </section>
-   
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="swiper.js"></script>
-    <script src="index.js"></script>
-  </body>
+          <ul class="space-y-5 flex flex-col capitalize">
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/fashion/met1.webp" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <a href="../fashion/fashion-1.html">
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    The Best Celebrity Fashion Moments of 2024: Trends, Hits, and Iconic Looks
+                  </h2>
+                </a>
+                <p class="text-sm text-zinc-500">1 days | By Sam</p>
+              </div>
+            </li>
+
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/fashion/gala2.webp" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <a href="../fashion/fashion-2.html">
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    The Pinnacle of Celebrity Fashion in 2024: Iconic Looks and Emerging Trends
+                  </h2>
+                </a>
+                <p class="text-sm text-zinc-500">1 days | By Sam</p>
+              </div>
+            </li>
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/fashion/met3.webp" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <a href="../fashion/fashion-3.html">
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    2024 Celebrity Fashion Trends: Iconic Moments and Influential Styles
+                  </h2>
+                </a>
+                <p class="text-sm text-zinc-500">1 days | By Sam</p>
+              </div>
+            </li>
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/fashion/4.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <a href="../fashion/fashion-4.html">
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    2024 Celebrity Fashion: Unveiling the Year’s Most Influential Styles and Trends
+                  </h2>
+                </a>
+                <p class="text-sm text-zinc-500">1 days | By Sam</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="../index.js"></script>
+</body>
+
 </html>

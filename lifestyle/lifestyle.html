@@ -1,245 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Glamoursome</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/4d509971f0.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="tailwind.js"></script>
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
 
-  <body class="bg-zinc-50 antialiased roboto-regular">
-    <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
-      <!-- desktop navbar   -->
-      <nav
-        class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden"
-      >
-        <!-- logo  -->
-        <div class="cursor-pointer">
-            <a src="/" class="text-xl font-bold">GLAMOURSOME</a>
-          </div>
-        <ul class="flex gap-5 uppercase">
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">Home</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">Fashion</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">relationship</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">lifestyle</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">beauty</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">FASHION</li></a
-          >
-        </ul>
-      </nav>
-      <!-- mobile navbar   -->
-      <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
-        <!-- logo  -->
-        <div>
-          <p class="text-xl font-bold">GLAMOURSOME</p>
-        </div>
-        <div class="off-screen-menu p-5 flex flex-col gap-5">
-          <ul class="w-full open-dropdown flex-col items-center">
-            <div>
-              <p class="text-xl font-bold">GLAMOURSOME</p>
-            </div>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">Home</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">Fashion</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer"
-                >relationship</a
-              >
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">lifestyle</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">beauty</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">FASHION</a>
-            </li>
-          </ul>
-        </div>
-        <nav>
-          <div class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </nav>
-      </nav>
-    </header>
-    <!-- Banner 3 Card Section  -->
-    <section
-      class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24"
-    >
-      <div class="grid grid-cols-1 md:grid-cols-10 gap-10">
-        <ul class="col-span-7 grid grid-cols-1 md:grid-cols-2 gap-5">
-          <li class="relative group overflow-hidden h-[30rem]">
-            <img
-              src="https://nunforest.com/mite-demo/upload/blog/a1@2x.jpg"
-              alt="blog"
-              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-125 duration-[5000ms]"
-            />
-            <div
-              class="absolute p-5 text-white w-full bottom-0 flex flex-col gap-3 items-center"
-            >
-              <a href="fashion-1.html"
-                ><p class="bg-red-600 w-min px-2 py-1 text-sm cursor-pointer">
-                  FASHION
-                </p></a
-              >
-              <a href="fashion-1.html"
-                ><h6 class="text-3xl font-bold cursor-pointer">
-                    The Best Celebrity Fashion Moments of 2024: Trends, Hits, and Iconic Looks                </h6></a
-              >
-              <p class="text-sm">by Sam | 1 days</p>
-            </div>
-          </li>
-          <li class="relative group overflow-hidden h-[30rem]">
-            <img
-              src="https://nunforest.com/mite-demo/upload/blog/a2@2x.jpg"
-              alt="blog"
-              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-125 duration-[5000ms]"
-            />
-            <div
-              class="absolute p-5 text-white w-full bottom-0 flex flex-col gap-3 items-center"
-            >
-              <a href="fashion-2.html"
-                ><p class="bg-red-600 w-min px-2 py-1 text-sm cursor-pointer">
-                  FASHION
-                </p></a
-              >
-              <a href="#"
-                ><h6 class="text-3xl font-bold cursor-pointer">
-                    The Pinnacle of Celebrity Fashion in 2024: Iconic Looks and Emerging Trends                </h6></a
-              >
-              <p class="text-sm">by Sam | 1 days</p>
-            </div>
-          </li>
-          <li class="relative group overflow-hidden h-[30rem]">
-            <img
-              src="https://nunforest.com/mite-demo/upload/blog/a3@2x.jpg"
-              alt="blog"
-              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-125 duration-[5000ms]"
-            />
-            <div
-              class="absolute p-5 text-white w-full bottom-0 flex flex-col gap-3 items-center"
-            >
-              <a href="fashion-3.html"
-                ><p class="bg-red-600 w-min px-2 py-1 text-sm cursor-pointer">
-                  FASHION
-                </p></a
-              >
-              <a href="fashion-3.html"
-                ><h6 class="text-3xl font-bold cursor-pointer">
-                    2024 Celebrity Fashion Trends: Iconic Moments and Influential Styles
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glamoursome</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-                </h6></a
-              >
-              <p class="text-sm">by Sam | 1 days</p>
-            </div>
-          </li>
-          <li class="relative group overflow-hidden h-[30rem]">
-            <img
-              src="https://nunforest.com/mite-demo/upload/blog/c3@2x.jpg"
-              alt="blog"
-              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-125 duration-[5000ms]"
-            />
-            <div
-              class="absolute p-5 text-white w-full bottom-0 flex flex-col gap-3 items-center"
-            >
-              <a href="fashion-4.html"
-                ><p class="bg-red-600 w-min px-2 py-1 text-sm cursor-pointer">
-                  FASHION
-                </p></a
-              >
-              <a href="fashion-4.html"
-                ><h6 class="text-3xl font-bold cursor-pointer">
-                    2024 Celebrity Fashion: Unveiling the Year’s Most Influential Styles and Trends
-                </h6></a
-              >
-              <p class="text-sm">by Sam | 1 days</p>
-            </div>
-          </li>
-        </ul>
-          <!-- aside Countries  -->
-          <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
-            <h6 class="text-xl font-bold mb-3">Categories</h6>
-            <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
-              <div class="w-16 h-full bg-red-600 rounded-xl"></div>
-            </div>
-            <div class="space-y-3 flex flex-col capitalize">
-              <a
-                href="../fashion/fashion.html"
-                class="text-zinc-600 hover:text-red-600 space-x-3"
-              >
-                <span>Fashion</span></a
-              >
-              <a
-                href="../relationship/relationship.html"
-                class="text-zinc-600 hover:text-red-600 space-x-3"
-              >
-                <span>relationship</span></a
-              >
-              <a
-                href="../lifestyle/lifestyle.html"
-                class="text-zinc-600 hover:text-red-600 space-x-3"
-              >
-                <span>lifestyle</span></a
-              >
-              <a
-                href="../beauty/beauty.html"
-                class="text-zinc-600 hover:text-red-600 space-x-3"
-              >
-                <span>beauty</span></a
-              >
-              <a
-                href="../travel/travel.html"
-                class="text-zinc-600 hover:text-red-600 space-x-3"
-              >
-                <span>travel</span></a
-              >
-            </div>
-          </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/4d509971f0.js" crossorigin="anonymous"></script>
+  <script src="../tailwind.js"></script>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="bg-zinc-50 antialiased roboto-regular">
+  <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
+    <!-- desktop navbar   -->
+    <nav
+      class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden">
+      <!-- logo  -->
+      <div class="cursor-pointer">
+        <a href="/" class="text-xl font-bold">GLAMOURSOME</a>
       </div>
-    </section>
+      <ul class="flex gap-5 uppercase">
+        <a src="../index.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Home</li>
+        </a>
+        <a src="/fashion/fashion.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Fashion</li>
+        </a>
+        <a src="/relationship/relationship.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Relationship</li>
+        </a>
+        <a src="/lifestyle/lifestyle.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Lifestyle</li>
+        </a>
+        <a src="/beauty/beauty.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Beauty</li>
+        </a>
+        <a src="#" class="hover:text-red-600">
+          <li class="cursor-pointer">Travel</li>
+        </a>
+      </ul>
+    </nav>
+    <!-- mobile navbar   -->
+    <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
+      <!-- logo  -->
+      <div>
+        <p class="text-xl font-bold">GLAMOURSOME</p>
+      </div>
+      <div class="off-screen-menu p-5 flex flex-col gap-5">
+        <ul class="w-full open-dropdown flex-col items-center">
+          <div>
+            <p class="text-xl font-bold">GLAMOURSOME</p>
+          </div>
+          <li>
+            <a href="#" class="hover:text-red-600 cursor-pointer">Home</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-red-600 cursor-pointer">LIFESTYLE</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-red-600 cursor-pointer">relationship</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-red-600 cursor-pointer">lifestyle</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-red-600 cursor-pointer">beauty</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-red-600 cursor-pointer">LIFESTYLE</a>
+          </li>
+        </ul>
+      </div>
+      <nav>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </nav>
+  </header>
+  <!-- Banner 3 Card Section  -->
+  <section class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24">
+    <div class="grid grid-cols-1 md:grid-cols-10 gap-10">
+      <ul class="col-span-7 grid grid-cols-1 md:grid-cols-2 gap-5">
+        <li class="relative group overflow-hidden h-[30rem]">
+          <img src="../assets/lifestyle/1.jpg" alt="blog"
+            class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-125 duration-[5000ms]" />
+          <div class="absolute p-5 text-white w-full bottom-0 flex flex-col gap-3 items-center">
+            <a href="lifestyle-1.html">
+              <p class="bg-red-600 w-min px-2 py-1 text-sm cursor-pointer">
+                LIFESTYLE
+              </p>
+            </a>
+            <a href="lifestyle-1.html">
+              <h6 class="text-3xl font-bold cursor-pointer">
+                "Exploring 2024: The Latest Trends in American Lifestyle and Living"
+              </h6>
+            </a>
+            <p class="text-sm">by Sam | 1 days</p>
+          </div>
+        </li>
+        <li class="relative group overflow-hidden h-[30rem]">
+          <img src="../assets/lifestyle/2.jpg" alt="blog"
+            class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-125 duration-[5000ms]" />
+          <div class="absolute p-5 text-white w-full bottom-0 flex flex-col gap-3 items-center">
+            <a href="lifestyle-2.html">
+              <p class="bg-red-600 w-min px-2 py-1 text-sm cursor-pointer">
+                LIFESTYLE
+              </p>
+            </a>
+            <a href="lifestyle-2.html">
+              <h6 class="text-3xl font-bold cursor-pointer">
+                "Navigating 2024: The Top Lifestyle Trends Shaping American Life"
+              </h6>
+            </a>
+            <p class="text-sm">by Sam | 1 days</p>
+          </div>
+        </li>
+        <li class="relative group overflow-hidden h-[30rem]">
+          <img src="../assets/lifestyle/3.webp" alt="blog"
+            class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-125 duration-[5000ms]" />
+          <div class="absolute p-5 text-white w-full bottom-0 flex flex-col gap-3 items-center">
+            <a href="lifestyle-3.html">
+              <p class="bg-red-600 w-min px-2 py-1 text-sm cursor-pointer">
+                LIFESTYLE
+              </p>
+            </a>
+            <a href="lifestyle-3.html">
+              <h6 class="text-3xl font-bold cursor-pointer">
+                "2024 Lifestyle Trends in the USA: Transformations in Wellness, Technology, and Daily Living"
+              </h6>
+            </a>
+            <p class="text-sm">by Sam | 1 days</p>
+          </div>
+        </li>
+        <li class="relative group overflow-hidden h-[30rem]">
+          <img src="../assets/lifestyle/4.jpg" alt="blog"
+            class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-125 duration-[5000ms]" />
+          <div class="absolute p-5 text-white w-full bottom-0 flex flex-col gap-3 items-center">
+            <a href="lifestyle-4.html">
+              <p class="bg-red-600 w-min px-2 py-1 text-sm cursor-pointer">
+                LIFESTYLE
+              </p>
+            </a>
+            <a href="lifestyle-4.html">
+              <h6 class="text-3xl font-bold cursor-pointer">
+                "2024 USA Lifestyle Trends: Navigating the Latest Shifts in Health, Technology, and Home Living"
+              </h6>
+            </a>
+            <p class="text-sm">by Sam | 1 days</p>
+          </div>
+        </li>
+      </ul>
+      <aside class="md:col-span-3 space-y-5 h-full">
+        <!-- aside Countries  -->
+        <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
+          <h6 class="text-xl font-bold mb-3">Categories</h6>
+          <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
+            <div class="w-16 h-full bg-red-600 rounded-xl"></div>
+          </div>
+          <div class="space-y-3 flex flex-col capitalize">
+            <a href="#" class="text-zinc-600 hover:text-red-600 space-x-3">
+              <span>LIFESTYLE</span></a>
+            <a href="#" class="text-zinc-600 hover:text-red-600 space-x-3">
+              <span>Lifestyle</span></a>
+            <a href="#" class="text-zinc-600 hover:text-red-600 space-x-3">
+              <span>food</span></a>
+            <a href="#" class="text-zinc-600 hover:text-red-600 space-x-3">
+              <span>LIFESTYLE</span></a>
+            <a href="#" class="text-zinc-600 hover:text-red-600 space-x-3">
+              <span>food</span></a>
+            <a href="#" class="text-zinc-600 hover:text-red-600 space-x-3">
+              <span>LIFESTYLE</span></a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
 
-    
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="swiper.js"></script>
-    <script src="index.js"></script>
-  </body>
+
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>

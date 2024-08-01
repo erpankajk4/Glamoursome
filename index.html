@@ -1,732 +1,625 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Glamoursome</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/4d509971f0.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="tailwind.js"></script>
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
 
-  <body class="bg-zinc-50 antialiased roboto-regular">
-    <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
-      <!-- desktop navbar   -->
-      <nav
-        class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden"
-      >
-        <!-- logo  -->
-        <div class="cursor-pointer">
-          <a src="/" class="text-xl font-bold">GLAMOURSOME</a>
-        </div>
-        <ul class="flex gap-5 uppercase">
-            <a src="#" class="hover:text-red-600"><li class="cursor-pointer">Home</li></a>
-            <a src="fashion/fashion.html" class="hover:text-red-600"><li class="cursor-pointer">Fashion</li></a>
-            <a src="#" class="hover:text-red-600"><li class="cursor-pointer">relationship</li></a>
-            <a src="lifestyle/lifestyle.html" class="hover:text-red-600"><li class="cursor-pointer">lifestyle</li></a>
-            <a src="#" class="hover:text-red-600"><li class="cursor-pointer">beauty</li></a>
-            <a src="#" class="hover:text-red-600"><li class="cursor-pointer">travel</li></a>
-        </ul>
-      </nav>
-      <!-- mobile navbar   -->
-      <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
-        <!-- logo  -->
-        <div>
-          <p class="text-xl font-bold">GLAMOURSOME</p>
-        </div>
-        <div class="off-screen-menu p-5 flex flex-col gap-5">
-          <ul class="w-full open-dropdown flex-col items-center">
-            <div>
-              <p class="text-xl font-bold">GLAMOURSOME</p>
-            </div>
-            <li><a src="#" class="hover:text-red-600 cursor-pointer">Home</a></li>
-            <li><a src="fashion/fashion.html" class="hover:text-red-600 cursor-pointer">Fashion</a></li>
-            <li><a src="#" class="hover:text-red-600 cursor-pointer">relationship</a></li>
-            <li><a src="lifestyle/lifestyle.html" class="hover:text-red-600 cursor-pointer">lifestyle</a></li>
-            <li><a src="#" class="hover:text-red-600 cursor-pointer">beauty</a></li>
-            <li><a src="#" class="hover:text-red-600 cursor-pointer">travel</a></li>
-          </ul>
-        </div>
-        <nav>
-          <div class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </nav>
-      </nav>
-    </header>
-    <!-- Banner 3 Card Section  -->
-    <section
-      class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24"
-    >
-      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <li class="col-span-1 relative group overflow-hidden h-[30rem]">
-          <img
-            src="./assets/fashion/6.jpg"
-            alt="blog"
-            class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-125 duration-[5000ms]"
-          />
-          <div
-            class="absolute p-5 text-white w-full bottom-0 flex flex-col gap-3 items-center"
-          >
-            <a href="lifestyle/lifestyle-2.html"
-              ><p class="bg-red-600 w-min px-2 py-1 text-sm cursor-pointer">
-Lifestyle              </p></a
-            >
-            <a href="lifestyle/lifestyle-2.html"
-              ><h6 class="text-3xl font-bold cursor-pointer">
-                "Navigating 2024: The Top Lifestyle Trends Shaping American Life"
-              </h6></a
-            >
-            <p class="text-sm">by Sam | 1 day ago</p>
-          </div>
-        </li>
-        <li class="col-span-1 relative group overflow-hidden h-[30rem]">
-          <img
-            src="./assets/fashion/met1.webp"
-            alt="blog"
-            class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-125 duration-[5000ms]"
-          />
-          <div
-            class="absolute p-5 text-white w-full bottom-0 flex flex-col gap-3 items-center"
-          >
-            <a href="fashion/fashion-1.html"
-              ><p class="bg-red-600 w-min px-2 py-1 text-sm cursor-pointer">
-Fashion              </p></a
-            >
-            <a href="#"
-              ><h6 class="text-3xl font-bold cursor-pointer">
-                The Best Celebrity Fashion Moments of 2024: Trends, Hits, and Iconic Looks      
-              </h6></a
-            >
-            <p class="text-sm">by Sam | 1 day ago</p>
-          </div>
-        </li>
-        <li class="col-span-1 relative group overflow-hidden h-[30rem]">
-          <img
-            src="/assets/lifestyle/4.jpg"
-            alt="blog"
-            class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-125 duration-[5000ms]"
-          />
-          <div
-            class="absolute p-5 text-white w-full bottom-0 flex flex-col gap-3 items-center"
-          >
-            <a href="/lifestyle/lifestyle-4.html"
-              ><p class="bg-red-600 w-min px-2 py-1 text-sm cursor-pointer">
-Lifestyle              </p></a
-            >
-            <a href="#"
-              ><h6 class="text-3xl font-bold cursor-pointer">
-                "2024 USA Lifestyle Trends: Navigating the Latest Shifts in Health, Technology, and Home Living"
-              </h6></a
-            >
-            <p class="text-sm">by Sam | 1 day ago</p>
-          </div>
-        </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glamoursome</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/4d509971f0.js" crossorigin="anonymous"></script>
+  <script src="tailwind.js"></script>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="bg-zinc-50 antialiased roboto-regular">
+  <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
+    <!-- desktop navbar   -->
+    <nav
+      class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden">
+      <!-- logo  -->
+      <div class="cursor-pointer">
+        <a href="/" class="text-xl font-bold">GLAMOURSOME</a>
+      </div>
+      <ul class="flex gap-5 uppercase">
+        <a href="/index.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Home</li>
+        </a>
+        <a href="/fashion/fashion.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Fashion</li>
+        </a>
+        <a href="/relationship/relationship.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Relationship</li>
+        </a>
+        <a href="/lifestyle/lifestyle.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Lifestyle</li>
+        </a>
+        <a href="/beauty/beauty.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Beauty</li>
+        </a>
+        <a href="#" class="hover:text-red-600">
+          <li class="cursor-pointer">Travel</li>
+        </a>
       </ul>
-    </section>
-    <!-- Slider 1 Section -->
-    <section
-      class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10"
-    >
-      <h2 class="text-3xl mb-10 text-center uppercase">Latest Fashion</h2>
-      <!-- slider -->
-      <div class="swiper2 w-full h-auto overflow-hidden relative">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper text-black">
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="./assets/fashion/met1.webp"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="fashion/fashion-1.html"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Fashion
-                </p></a
-              >
-              <a href="fashion/fashion-1.html"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  The Best Celebrity Fashion Moments of 2024: Trends, Hits, and Iconic Looks  
-                                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
+    </nav>
+    <!-- mobile navbar   -->
+    <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
+      <!-- logo  -->
+      <div>
+        <p class="text-xl font-bold">GLAMOURSOME</p>
+      </div>
+      <div class="off-screen-menu p-5 flex flex-col gap-5">
+        <ul class="w-full open-dropdown flex-col items-center">
+          <div>
+            <p class="text-xl font-bold">GLAMOURSOME</p>
           </div>
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="./assets/fashion/gala2.webp"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="fashion/fashion-2.html"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Fashion
-                </p></a
-              >
-              <a href="fashion/fashion-2.html"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  The Pinnacle of Celebrity Fashion in 2024: Iconic Looks and Emerging Trends            
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
+          <li><a href="/index.html" class="hover:text-red-600 cursor-pointer">Home</a></li>
+          <li><a href="fashion/fashion.html" class="hover:text-red-600 cursor-pointer">Fashion</a></li>
+          <li><a href="/relationship/relationship.html" class="hover:text-red-600 cursor-pointer">Relationship</a></li>
+          <li><a href="lifestyle/lifestyle.html" class="hover:text-red-600 cursor-pointer">Lifestyle</a></li>
+          <li><a href="/beauty/beauty.html" class="hover:text-red-600 cursor-pointer">Beauty</a></li>
+          <li><a href="#" class="hover:text-red-600 cursor-pointer">Travel</a></li>
+        </ul>
+      </div>
+      <nav>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </nav>
+  </header>
+  <!-- Banner 3 Card Section  -->
+  <section class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24">
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <li class="col-span-1 relative group overflow-hidden h-[30rem]">
+        <img src="./assets/fashion/6.jpg" alt="blog"
+          class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-125 duration-[5000ms]" />
+        <div class="absolute p-5 text-white w-full bottom-0 flex flex-col gap-3 items-center">
+          <a href="lifestyle/lifestyle-2.html">
+            <p class="bg-red-600 w-min px-2 py-1 text-sm cursor-pointer">
+              Lifestyle </p>
+          </a>
+          <a href="lifestyle/lifestyle-2.html">
+            <h6 class="text-3xl font-bold cursor-pointer">
+              "Navigating 2024: The Top Lifestyle Trends Shaping American Life"
+            </h6>
+          </a>
+          <p class="text-sm">by Sam | 1 day ago</p>
+        </div>
+      </li>
+      <li class="col-span-1 relative group overflow-hidden h-[30rem]">
+        <img src="./assets/fashion/met1.webp" alt="blog"
+          class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-125 duration-[5000ms]" />
+        <div class="absolute p-5 text-white w-full bottom-0 flex flex-col gap-3 items-center">
+          <a href="fashion/fashion-1.html">
+            <p class="bg-red-600 w-min px-2 py-1 text-sm cursor-pointer">
+              Fashion </p>
+          </a>
+          <a href="#">
+            <h6 class="text-3xl font-bold cursor-pointer">
+              The Best Celebrity Fashion Moments of 2024: Trends, Hits, and Iconic Looks
+            </h6>
+          </a>
+          <p class="text-sm">by Sam | 1 day ago</p>
+        </div>
+      </li>
+      <li class="col-span-1 relative group overflow-hidden h-[30rem]">
+        <img src="/assets/lifestyle/4.jpg" alt="blog"
+          class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-125 duration-[5000ms]" />
+        <div class="absolute p-5 text-white w-full bottom-0 flex flex-col gap-3 items-center">
+          <a href="/lifestyle/lifestyle-4.html">
+            <p class="bg-red-600 w-min px-2 py-1 text-sm cursor-pointer">
+              Lifestyle </p>
+          </a>
+          <a href="#">
+            <h6 class="text-3xl font-bold cursor-pointer">
+              "2024 USA Lifestyle Trends: Navigating the Latest Shifts in Health, Technology, and Home Living"
+            </h6>
+          </a>
+          <p class="text-sm">by Sam | 1 day ago</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!-- Slider 1 Section -->
+  <section class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10">
+    <h2 class="text-3xl mb-10 text-center uppercase">Latest Fashion</h2>
+    <!-- slider -->
+    <div class="swiper2 w-full h-auto overflow-hidden relative">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper text-black">
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="./assets/fashion/met1.webp" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
           </div>
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="./assets/fashion/met3.webp"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="fashion/fashion-3.html"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Fashion
-                </p></a
-              >
-              <a href="fashion/fashion-3.html"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  2024 Celebrity Fashion Trends: Iconic Moments and Influential Styles
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
-          </div>
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="./assets/fashion/4.jpg"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="fashion/fashion-4.html"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Food
-                </p></a
-              >
-              <a href="fashion/fashion-4.html"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  2024 Celebrity Fashion: Unveiling the Year’s Most Influential Styles and Trends
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
+          <div class="w-full text-center p-3">
+            <a href="fashion/fashion-1.html">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+                Fashion
+              </p>
+            </a>
+            <a href="fashion/fashion-1.html">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                The Best Celebrity Fashion Moments of 2024: Trends, Hits, and Iconic Looks
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
           </div>
         </div>
-        <div
-          class="flex mt-8 justify-between z-40 w-full absolute top-[48%] left-0"
-        >
-          <div class="slide-prev2">
-            <i
-              class="fa-solid fa-circle-chevron-left text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"
-            ></i>
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="./assets/fashion/gala2.webp" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
           </div>
-          <div class="slide-next2">
-            <i
-              class="fa-solid fa-circle-chevron-right text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"
-            ></i>
+          <div class="w-full text-center p-3">
+            <a href="fashion/fashion-2.html">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+                Fashion
+              </p>
+            </a>
+            <a href="fashion/fashion-2.html">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                The Pinnacle of Celebrity Fashion in 2024: Iconic Looks and Emerging Trends
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="./assets/fashion/met3.webp" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
+          </div>
+          <div class="w-full text-center p-3">
+            <a href="fashion/fashion-3.html">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+                Fashion
+              </p>
+            </a>
+            <a href="fashion/fashion-3.html">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                2024 Celebrity Fashion Trends: Iconic Moments and Influential Styles
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="./assets/fashion/4.jpg" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
+          </div>
+          <div class="w-full text-center p-3">
+            <a href="fashion/fashion-4.html">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+                Food
+              </p>
+            </a>
+            <a href="fashion/fashion-4.html">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                2024 Celebrity Fashion: Unveiling the Year’s Most Influential Styles and Trends
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Slider 2 Section -->
-    <section
-      class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10"
-    >
-      <h2 class="text-3xl mb-10 text-center uppercase">Latest Relationship</h2>
-      <!-- slider -->
-      <div class="swiper2 w-full h-auto overflow-hidden relative">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper text-black">
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="https://nunforest.com/mite-demo/upload/blog/p4@2x.jpg"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="#"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Food
-                </p></a
-              >
-              <a href="#"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
+      <div class="flex mt-8 justify-between z-40 w-full absolute top-[48%] left-0">
+        <div class="slide-prev2">
+          <i
+            class="fa-solid fa-circle-chevron-left text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"></i>
+        </div>
+        <div class="slide-next2">
+          <i
+            class="fa-solid fa-circle-chevron-right text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Slider 2 Section -->
+  <section class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10">
+    <h2 class="text-3xl mb-10 text-center uppercase">Latest Relationship</h2>
+    <!-- slider -->
+    <div class="swiper2 w-full h-auto overflow-hidden relative">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper text-black">
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="https://nunforest.com/mite-demo/upload/blog/p4@2x.jpg" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
           </div>
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="/assets/"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="#"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Food
-                </p></a
-              >
-              <a href="#"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
-          </div>
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="https://nunforest.com/mite-demo/upload/blog/p3@2x.jpg"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="#"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Food
-                </p></a
-              >
-              <a href="#"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
-          </div>
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="https://nunforest.com/mite-demo/upload/blog/a1@2x.jpg"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="#"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Food
-                </p></a
-              >
-              <a href="#"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
+          <div class="w-full text-center p-3">
+            <a href="/assets/relationship/r1.jpg">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+                Relationship
+              </p>
+            </a>
+            <a href="/relationship/relationship-1.html">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                Navigating Modern Love: A Guide to Healthy Relationships   
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
           </div>
         </div>
-        <div
-          class="flex mt-8 justify-between z-40 w-full absolute top-[48%] left-0"
-        >
-          <div class="slide-prev2">
-            <i
-              class="fa-solid fa-circle-chevron-left text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"
-            ></i>
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="/assets/relationship/r2.jpg" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
           </div>
-          <div class="slide-next2">
-            <i
-              class="fa-solid fa-circle-chevron-right text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"
-            ></i>
+          <div class="w-full text-center p-3">
+            <a href="/relationship/relationship-2.html">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+Relationship              </p>
+            </a>
+            <a href="/relationship//relationship-2.html">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                From First Dates to Forever: Mastering the Art of Connection           
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="/assets/relationship/r3.jpg" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
+          </div>
+          <div class="w-full text-center p-3">
+            <a href="/relationship/relationship-3.html">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+Relationship
+              </p>
+            </a>
+            <a href="#">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                Rediscovering Romance: Reigniting Passion in Long-Term Relationships
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="../assets/relationship/r4.jpg" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
+          </div>
+          <div class="w-full text-center p-3">
+            <a href="/relationship/relationship-4.html">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+Relationship         
+     </p>
+            </a>
+            <a href="#">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                Solo & Satisfied: Embracing Singlehood While Open to Love
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Slider 3 Section -->
-    <section
-      class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10"
-    >
-      <h2 class="text-3xl mb-10 text-center uppercase">Latest Lifestyle</h2>
-      <!-- slider -->
-      <div class="swiper2 w-full h-auto overflow-hidden relative">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper text-black">
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="/assets/lifestyle/1.jpg"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="#"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                 Lifestyle
-                </p></a
-              >
-              <a href="lifestyle/lifestyle-1.html"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  "Exploring 2024: The Latest Trends in American Lifestyle and Living"
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
+      <div class="flex mt-8 justify-between z-40 w-full absolute top-[48%] left-0">
+        <div class="slide-prev2">
+          <i
+            class="fa-solid fa-circle-chevron-left text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"></i>
+        </div>
+        <div class="slide-next2">
+          <i
+            class="fa-solid fa-circle-chevron-right text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Slider 3 Section -->
+  <section class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10">
+    <h2 class="text-3xl mb-10 text-center uppercase">Latest Lifestyle</h2>
+    <!-- slider -->
+    <div class="swiper2 w-full h-auto overflow-hidden relative">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper text-black">
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="/assets/lifestyle/1.jpg" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
           </div>
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="/assets/lifestyle/2.jpg"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="#"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Food
-                </p></a
-              >
-              <a href="/lifestyle/lifestyle-2.html"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  "Navigating 2024: The Top Lifestyle Trends Shaping American Life"
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
-          </div>
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="./assets/lifestyle/3.webp"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="#"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-Lifestyle                </p></a
-              >
-              <a href="#"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  "2024 Lifestyle Trends in the USA: Transformations in Wellness, Technology, and Daily Living"
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
-          </div>
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="/assets/lifestyle/4.jpg"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="#"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Food
-                </p></a
-              >
-              <a href="/lifestyle/lifestyle-4.html"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  "2024 USA Lifestyle Trends: Navigating the Latest Shifts in Health, Technology, and Home Living"
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
+          <div class="w-full text-center p-3">
+            <a href="#">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+                Lifestyle
+              </p>
+            </a>
+            <a href="lifestyle/lifestyle-1.html">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                "Exploring 2024: The Latest Trends in American Lifestyle and Living"
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
           </div>
         </div>
-        <div
-          class="flex mt-8 justify-between z-40 w-full absolute top-[48%] left-0"
-        >
-          <div class="slide-prev2">
-            <i
-              class="fa-solid fa-circle-chevron-left text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"
-            ></i>
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="/assets/lifestyle/2.jpg" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
           </div>
-          <div class="slide-next2">
-            <i
-              class="fa-solid fa-circle-chevron-right text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"
-            ></i>
+          <div class="w-full text-center p-3">
+            <a href="#">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+                Food
+              </p>
+            </a>
+            <a href="/lifestyle/lifestyle-2.html">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                "Navigating 2024: The Top Lifestyle Trends Shaping American Life"
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="./assets/lifestyle/3.webp" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
+          </div>
+          <div class="w-full text-center p-3">
+            <a href="#">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+                Lifestyle </p>
+            </a>
+            <a href="#">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                "2024 Lifestyle Trends in the USA: Transformations in Wellness, Technology, and Daily Living"
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="/assets/lifestyle/4.jpg" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
+          </div>
+          <div class="w-full text-center p-3">
+            <a href="#">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+                Food
+              </p>
+            </a>
+            <a href="/lifestyle/lifestyle-4.html">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                "2024 USA Lifestyle Trends: Navigating the Latest Shifts in Health, Technology, and Home Living"
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Slider 4 Section -->
-    <section
-      class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10"
-    >
-      <h2 class="text-3xl mb-10 text-center uppercase">Latest Beauty</h2>
-      <!-- slider -->
-      <div class="swiper2 w-full h-auto overflow-hidden relative">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper text-black">
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="https://nunforest.com/mite-demo/upload/blog/p4@2x.jpg"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="#"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Food
-                </p></a
-              >
-              <a href="#"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
+      <div class="flex mt-8 justify-between z-40 w-full absolute top-[48%] left-0">
+        <div class="slide-prev2">
+          <i
+            class="fa-solid fa-circle-chevron-left text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"></i>
+        </div>
+        <div class="slide-next2">
+          <i
+            class="fa-solid fa-circle-chevron-right text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Slider 4 Section -->
+  <section class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10">
+    <h2 class="text-3xl mb-10 text-center uppercase">Latest Beauty</h2>
+    <!-- slider -->
+    <div class="swiper2 w-full h-auto overflow-hidden relative">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper text-black">
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="https://nunforest.com/mite-demo/upload/blog/p4@2x.jpg" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
           </div>
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="/assets/"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="#"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Food
-                </p></a
-              >
-              <a href="#"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
-          </div>
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="https://nunforest.com/mite-demo/upload/blog/p3@2x.jpg"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="#"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Food
-                </p></a
-              >
-              <a href="#"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
-          </div>
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="https://nunforest.com/mite-demo/upload/blog/a1@2x.jpg"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="#"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Food
-                </p></a
-              >
-              <a href="#"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
+          <div class="w-full text-center p-3">
+            <a href="#">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+                Food
+              </p>
+            </a>
+            <a href="#">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
           </div>
         </div>
-        <div
-          class="flex mt-8 justify-between z-40 w-full absolute top-[48%] left-0"
-        >
-          <div class="slide-prev2">
-            <i
-              class="fa-solid fa-circle-chevron-left text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"
-            ></i>
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="/assets/" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
           </div>
-          <div class="slide-next2">
-            <i
-              class="fa-solid fa-circle-chevron-right text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"
-            ></i>
+          <div class="w-full text-center p-3">
+            <a href="#">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+                Food
+              </p>
+            </a>
+            <a href="#">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="https://nunforest.com/mite-demo/upload/blog/p3@2x.jpg" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
+          </div>
+          <div class="w-full text-center p-3">
+            <a href="#">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+                Food
+              </p>
+            </a>
+            <a href="#">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="https://nunforest.com/mite-demo/upload/blog/a1@2x.jpg" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
+          </div>
+          <div class="w-full text-center p-3">
+            <a href="#">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+                Food
+              </p>
+            </a>
+            <a href="#">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Slider 4 Section -->
-    <section
-      class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10"
-    >
-      <h2 class="text-3xl mb-10 text-center uppercase">Latest Travel</h2>
-      <!-- slider -->
-      <div class="swiper2 w-full h-auto overflow-hidden relative">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper text-black">
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="https://nunforest.com/mite-demo/upload/blog/p4@2x.jpg"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="#"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Food
-                </p></a
-              >
-              <a href="#"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
+      <div class="flex mt-8 justify-between z-40 w-full absolute top-[48%] left-0">
+        <div class="slide-prev2">
+          <i
+            class="fa-solid fa-circle-chevron-left text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"></i>
+        </div>
+        <div class="slide-next2">
+          <i
+            class="fa-solid fa-circle-chevron-right text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Slider 4 Section -->
+  <section class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10">
+    <h2 class="text-3xl mb-10 text-center uppercase">Latest Travel</h2>
+    <!-- slider -->
+    <div class="swiper2 w-full h-auto overflow-hidden relative">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper text-black">
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="https://nunforest.com/mite-demo/upload/blog/p4@2x.jpg" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
           </div>
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="/assets/"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="#"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Food
-                </p></a
-              >
-              <a href="#"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
-          </div>
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="https://nunforest.com/mite-demo/upload/blog/p3@2x.jpg"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="#"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Food
-                </p></a
-              >
-              <a href="#"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
-          </div>
-          <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
-            <div class="relative group overflow-hidden h-56">
-              <img
-                src="https://nunforest.com/mite-demo/upload/blog/a1@2x.jpg"
-                alt="blog"
-                class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]"
-              />
-            </div>
-            <div class="w-full text-center p-3">
-              <a href="#"
-                ><p class="cursor-pointer text-sm text-red-600 uppercase">
-                  Food
-                </p></a
-              >
-              <a href="#"
-                ><h2 class="text-2xl font-bold capitalize cursor-pointer">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                </h2></a
-              >
-              <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
-            </div>
+          <div class="w-full text-center p-3">
+            <a href="#">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+                Food
+              </p>
+            </a>
+            <a href="#">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
           </div>
         </div>
-        <div
-          class="flex mt-8 justify-between z-40 w-full absolute top-[48%] left-0"
-        >
-          <div class="slide-prev2">
-            <i
-              class="fa-solid fa-circle-chevron-left text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"
-            ></i>
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="/assets/" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
           </div>
-          <div class="slide-next2">
-            <i
-              class="fa-solid fa-circle-chevron-right text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"
-            ></i>
+          <div class="w-full text-center p-3">
+            <a href="#">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+                Food
+              </p>
+            </a>
+            <a href="#">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="https://nunforest.com/mite-demo/upload/blog/p3@2x.jpg" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
+          </div>
+          <div class="w-full text-center p-3">
+            <a href="#">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+                Food
+              </p>
+            </a>
+            <a href="#">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto w-full bg-white overflow-hidden">
+          <div class="relative group overflow-hidden h-56">
+            <img src="https://nunforest.com/mite-demo/upload/blog/a1@2x.jpg" alt="blog"
+              class="w-full h-full object-cover group-hover:rotate-12 group-hover:scale-150 duration-[7000ms]" />
+          </div>
+          <div class="w-full text-center p-3">
+            <a href="#">
+              <p class="cursor-pointer text-sm text-red-600 uppercase">
+                Food
+              </p>
+            </a>
+            <a href="#">
+              <h2 class="text-2xl font-bold capitalize cursor-pointer">
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+              </h2>
+            </a>
+            <p class="text-sm text-zinc-400">by Sam | 1 day ago</p>
           </div>
         </div>
       </div>
-    </section>
-    <footer class="relative w-full bg-zinc-950 text-zinc-100">
-      <!-- copyright  -->
-      <div
-        class="bg-zinc-100 text-center w-full py-5 h-full px-5 md:px-36 text-zinc-700"
-      >
-        <div class="w-full max-w-screen-2xl mx-auto">
-          © Copyright 2024 | All Rights are Reserved | Designed and Managed By
-          Skyward Digital Solutions
+      <div class="flex mt-8 justify-between z-40 w-full absolute top-[48%] left-0">
+        <div class="slide-prev2">
+          <i
+            class="fa-solid fa-circle-chevron-left text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"></i>
+        </div>
+        <div class="slide-next2">
+          <i
+            class="fa-solid fa-circle-chevron-right text-5xl text-zinc-500 bg-white hover:text-black rounded-full opacity-55"></i>
         </div>
       </div>
-    </footer>
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="swiper.js"></script>
-    <script src="index.js"></script>
-  </body>
+    </div>
+  </section>
+  <footer class="relative w-full bg-zinc-950 text-zinc-100">
+    <!-- copyright  -->
+    <div class="bg-zinc-100 text-center w-full py-5 h-full px-5 md:px-36 text-zinc-700">
+      <div class="w-full max-w-screen-2xl mx-auto">
+        © Copyright 2024 | All Rights are Reserved | Designed and Managed By
+        Skyward Digital Solutions
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="swiper.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>

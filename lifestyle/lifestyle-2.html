@@ -1,314 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Glamoursome</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/4d509971f0.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="tailwind.js"></script>
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
 
-  <body class="bg-zinc-50 antialiased roboto-regular">
-    <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
-      <!-- desktop navbar   -->
-      <nav
-        class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden"
-      >
-        <!-- logo  -->
-        <div class="cursor-pointer">
-          <a src="/" class="text-xl font-bold">GLAMOURSOME</a>
-        </div>
-        <ul class="flex gap-5 uppercase">
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">Home</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">Fashion</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">relationship</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">lifestyle</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">beauty</li></a
-          >
-          <a src="#" class="hover:text-red-600"
-            ><li class="cursor-pointer">travel</li></a
-          >
-        </ul>
-      </nav>
-      <!-- mobile navbar   -->
-      <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
-        <!-- logo  -->
-        <div>
-          <p class="text-xl font-bold">GLAMOURSOME</p>
-        </div>
-        <div class="off-screen-menu p-5 flex flex-col gap-5">
-          <ul class="w-full open-dropdown flex-col items-center">
-            <div>
-              <p class="text-xl font-bold">GLAMOURSOME</p>
-            </div>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">Home</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">Fashion</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer"
-                >relationship</a
-              >
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">lifestyle</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">beauty</a>
-            </li>
-            <li>
-              <a src="#" class="hover:text-red-600 cursor-pointer">travel</a>
-            </li>
-          </ul>
-        </div>
-        <nav>
-          <div class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </nav>
-      </nav>
-    </header>
-    <!-- Banner 3 Card Section  -->
-    <section
-      class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24"
-    >
-      <div class="grid grid-cols-1 md:grid-cols-10 gap-5 relative">
-        <article class="md:col-span-7 space-y-8 text-zinc-900 text-justify">
-          <img
-            src="https://nunforest.com/mite-demo/upload/single/1@2x.jpg"
-            alt="blog"
-            class="w-full h-[20rem] md:h-[28rem] object-cover"
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glamoursome</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/4d509971f0.js" crossorigin="anonymous"></script>
+  <script src="../tailwind.js"></script>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="bg-zinc-50 antialiased roboto-regular">
+  <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
+    <!-- desktop navbar   -->
+    <nav
+      class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden">
+      <!-- logo  -->
+      <div class="cursor-pointer">
+        <a href="/" class="text-xl font-bold">GLAMOURSOME</a>
+      </div>
+      <ul class="flex gap-5 uppercase">
+        <a src="../index.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Home</li>
+        </a>
+        <a src="/fashion/fashion.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Fashion</li>
+        </a>
+        <a src="/relationship/relationship.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Relationship</li>
+        </a>
+        <a src="/lifestyle/lifestyle.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Lifestyle</li>
+        </a>
+        <a src="/beauty/beauty.html" class="hover:text-red-600">
+          <li class="cursor-pointer">Beauty</li>
+        </a>
+        <a src="#" class="hover:text-red-600">
+          <li class="cursor-pointer">Travel</li>
+        </a>
+      </ul>
+    </nav>
+    <!-- mobile navbar   -->
+    <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
+      <!-- logo  -->
+      <div>
+        <p class="text-xl font-bold">GLAMOURSOME</p>
+      </div>
+      <div class="off-screen-menu p-5 flex flex-col gap-5">
+        <ul class="w-full open-dropdown flex-col items-center">
           <div>
-            <p class="text-sm capitalize text-red-600">Lifestyle</p>
-            <h2 class="text-3xl font-bold mb-3">
-                "Navigating 2024: The Top Lifestyle Trends Shaping American Life"
-            </h2>
-            <p class="text-sm text-zinc-400">01/08/2024 | By Sam</p>
+            <p class="text-xl font-bold">GLAMOURSOME</p>
           </div>
-          <p class="text-zinc-600">
-            As 2024 progresses, the American lifestyle landscape is undergoing transformative shifts that reflect evolving values, technological advancements, and changing social dynamics. This year, the intersection of wellness, technology, sustainability, and personal fulfillment is shaping how people live, work, and play. This blog explores the key lifestyle trends of 2024, providing insight into how these developments are influencing everyday life and setting the stage for future trends.
+          <li>
+            <a src="/index.html" class="hover:text-red-600 cursor-pointer">Home</a>
+          </li>
+          <li>
+            <a src="/fashion/fashion.html" class="hover:text-red-600 cursor-pointer">Fashion</a>
+          </li>
+          <li>
+            <a src="/relationship/relationship.html" class="hover:text-red-600 cursor-pointer">Relationship</a>
+          </li>
+          <li>
+            <a src="/lifestyle/lifestyle.html" class="hover:text-red-600 cursor-pointer">Lifestyle</a>
+          </li>
+          <li>
+            <a src="/beauty/beauty.html" class="hover:text-red-600 cursor-pointer">Beauty</a>
+          </li>
+          <li>
+            <a src="#" class="hover:text-red-600 cursor-pointer">Travel</a>
+          </li>
+        </ul>
+      </div>
+      <nav>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </nav>
+  </header>
+  <!-- Banner 3 Card Section  -->
+  <section class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24">
+    <div class="grid grid-cols-1 md:grid-cols-10 gap-5 relative">
+      <article class="md:col-span-7 space-y-8 text-zinc-900 text-justify">
+        <img src="../assets/lifestyle/2.jpg" alt="blog" class="w-full h-[20rem] md:h-[28rem] object-cover" />
+        <div>
+          <p class="text-sm capitalize text-red-600">Lifestyle</p>
+          <h2 class="text-3xl font-bold mb-3">
+            "Navigating 2024: The Top Lifestyle Trends Shaping American Life"
+          </h2>
+          <p class="text-sm text-zinc-400">01/08/2024 | By Sam</p>
+        </div>
+        <p class="text-zinc-600">
+          As 2024 progresses, the American lifestyle landscape is undergoing transformative shifts that reflect evolving
+          values, technological advancements, and changing social dynamics. This year, the intersection of wellness,
+          technology, sustainability, and personal fulfillment is shaping how people live, work, and play. This blog
+          explores the key lifestyle trends of 2024, providing insight into how these developments are influencing
+          everyday life and setting the stage for future trends.
 
 
 
         </p>
-          <p class="text-2xl text-center">
-            In 2024, the concept of wellness has expanded beyond traditional health practices to encompass a holistic approach that integrates mind, body, and spirit.
-                                 </p>
-          <h4 class="mt-5 text-xl text-bold">
-            Holistic Wellness: Integrating Mind, Body, and Spirit
+        <p class="text-2xl text-center">
+          In 2024, the concept of wellness has expanded beyond traditional health practices to encompass a holistic
+          approach that integrates mind, body, and spirit.
+        </p>
+        <h4 class="mt-5 text-xl text-bold">
+          Holistic Wellness: Integrating Mind, Body, and Spirit
 
         </h4>
-          <p class="text-zinc-600">
-            In 2024, the concept of wellness has expanded beyond traditional health practices to encompass a holistic approach that integrates mind, body, and spirit. Americans are increasingly adopting comprehensive wellness routines that prioritize mental health as much as physical fitness. This shift is evidenced by the growing popularity of wellness retreats and programs that offer a blend of physical exercise, meditation, and personal development.
+        <p class="text-zinc-600">
+          In 2024, the concept of wellness has expanded beyond traditional health practices to encompass a holistic
+          approach that integrates mind, body, and spirit. Americans are increasingly adopting comprehensive wellness
+          routines that prioritize mental health as much as physical fitness. This shift is evidenced by the growing
+          popularity of wellness retreats and programs that offer a blend of physical exercise, meditation, and personal
+          development.
 
-            <br>
+          <br>
 
-            One notable trend is the rise of wellness tourism, where individuals seek out destinations that provide not only relaxation but also holistic health experiences. Wellness retreats in picturesque locations offer programs that combine yoga, mindfulness practices, and nutritional guidance, allowing participants to rejuvenate both mentally and physically. This trend underscores a broader movement towards recognizing the interconnectedness of mental and physical health and the need for environments that support overall well-being.
+          One notable trend is the rise of wellness tourism, where individuals seek out destinations that provide not
+          only relaxation but also holistic health experiences. Wellness retreats in picturesque locations offer
+          programs that combine yoga, mindfulness practices, and nutritional guidance, allowing participants to
+          rejuvenate both mentally and physically. This trend underscores a broader movement towards recognizing the
+          interconnectedness of mental and physical health and the need for environments that support overall
+          well-being.
 
 
 
-        </p> <h4 class="mt-5 text-xl text-bold">
-            Technology and Smart Living: A Leap into the Future
+        </p>
+        <h4 class="mt-5 text-xl text-bold">
+          Technology and Smart Living: A Leap into the Future
 
         </h4>
-          <p class="text-zinc-600">
-            Technology continues to be a driving force in reshaping American lifestyles, with smart living innovations at the forefront. In 2024, smart home technology has reached new heights, offering advanced features that enhance convenience, security, and energy efficiency. Smart homes are now equipped with systems that not only automate routine tasks but also adapt to individual preferences and behaviors.
+        <p class="text-zinc-600">
+          Technology continues to be a driving force in reshaping American lifestyles, with smart living innovations at
+          the forefront. In 2024, smart home technology has reached new heights, offering advanced features that enhance
+          convenience, security, and energy efficiency. Smart homes are now equipped with systems that not only automate
+          routine tasks but also adapt to individual preferences and behaviors.
 
 
 
-            <br>
-            One significant development is the integration of AI-driven smart home assistants that provide personalized recommendations and automate home management. These systems can control lighting, adjust heating and cooling, and even manage security protocols based on user habits and preferences. For instance, smart thermostats now utilize machine learning to optimize energy usage and create a comfortable living environment tailored to the occupants’ routines. This level of personalization not only improves convenience but also contributes to energy conservation and cost savings.
+          <br>
+          One significant development is the integration of AI-driven smart home assistants that provide personalized
+          recommendations and automate home management. These systems can control lighting, adjust heating and cooling,
+          and even manage security protocols based on user habits and preferences. For instance, smart thermostats now
+          utilize machine learning to optimize energy usage and create a comfortable living environment tailored to the
+          occupants’ routines. This level of personalization not only improves convenience but also contributes to
+          energy conservation and cost savings.
 
 
-            <br><br>
-            Wearable technology has also advanced, with new devices offering sophisticated health and fitness tracking features. Smartwatches and fitness trackers now provide real-time data on heart rate, sleep patterns, and physical activity, allowing users to monitor their health more effectively. The integration of wearable technology with health apps provides a comprehensive view of an individual’s well-being, facilitating proactive health management and personalized fitness plans.
+          <br><br>
+          Wearable technology has also advanced, with new devices offering sophisticated health and fitness tracking
+          features. Smartwatches and fitness trackers now provide real-time data on heart rate, sleep patterns, and
+          physical activity, allowing users to monitor their health more effectively. The integration of wearable
+          technology with health apps provides a comprehensive view of an individual’s well-being, facilitating
+          proactive health management and personalized fitness plans.
 
 
 
 
         </p>
         <div class="grid grid-cols-2 gap-5">
-            <img
-              src="https://nunforest.com/mite-demo/upload/single/2@2x.jpg"
-              alt="blog"
-              class="w-full h-64 object-cover"
-            />
-            <img
-              src="https://nunforest.com/mite-demo/upload/single/3@2x.jpg"
-              alt="blog"
-              class="w-full h-64 object-cover"
-            />
-          </div>
-           <h4 class="mt-5 text-xl text-bold">
-            Sustainable Living: Embracing Eco-Friendly Practices
-
-
-
-        </h4>
-          <p class="text-zinc-600">
-            The drive towards sustainability is a defining trend in 2024, reflecting a growing commitment to environmental responsibility and eco-friendly living. Americans are increasingly incorporating sustainable practices into their daily lives, from eco-conscious home improvements to mindful consumption habits.
-
-
-
-
- <br>
- One prominent trend is the adoption of green building practices and sustainable home design. Many homeowners are investing in energy-efficient appliances, renewable energy sources, and eco-friendly materials. For example, solar panels and green roofs are becoming more common, providing both environmental benefits and cost savings. The use of recycled and upcycled materials in home decor and renovation projects also reflects a commitment to reducing waste and promoting sustainable living.
-
-
-
-
-<br><br>
-In addition to home improvements, sustainable fashion and responsible consumption are gaining popularity. The rise of eco-friendly fashion brands and second-hand shopping reflects a shift towards more conscious consumerism. Many people are choosing to invest in high-quality, durable clothing items and supporting brands that prioritize ethical production practices. This trend towards sustainable fashion highlights a broader awareness of the environmental impact of clothing and a desire to make more responsible choices.
-
-
-
-
-
-        </p>
-       
-      
-          <h4 class="mt-5 text-xl text-bold">
-            Work-Life Balance: Redefining Professional and Personal Life
-
-
-        </h4>
-          <p class="text-zinc-600">
-            The concept of work-life balance has evolved significantly in 2024, driven by changes in the workplace and shifting priorities. The rise of remote work and flexible working arrangements has transformed how people approach their professional and personal lives. Many Americans are seeking ways to achieve a better balance between work responsibilities and personal fulfillment.
-
-
-            <br>
-            Remote work has become a permanent fixture for many, leading to the creation of home office spaces that are both functional and aesthetically pleasing. The emphasis on creating a productive and comfortable work environment at home reflects a desire to blend work and personal life seamlessly. This trend has also led to an increased focus on mental health and well-being in the workplace, with companies offering support programs and resources to help employees manage stress and maintain a healthy work-life balance.
-
-
-        </p>
-         
+          <img src="../assets/lifestyle/2.jpg" alt="blog" class="w-full h-64 object-cover" />
+          <img src="../assets/lifestyle/5.jpg" alt="blog" class="w-full h-64 object-cover" />
+        </div>
         <h4 class="mt-5 text-xl text-bold">
-            Cultural and Social Connections: Fostering Community and Engagement
+          Sustainable Living: Embracing Eco-Friendly Practices
+
 
 
         </h4>
-          <p class="text-zinc-600">
-            In 2024, fostering cultural and social connections has become a significant focus, reflecting a desire for meaningful engagement and community. Social media and digital platforms continue to play a role in connecting people, but there is also a growing emphasis on face-to-face interactions and community-building activities.
+        <p class="text-zinc-600">
+          The drive towards sustainability is a defining trend in 2024, reflecting a growing commitment to environmental
+          responsibility and eco-friendly living. Americans are increasingly incorporating sustainable practices into
+          their daily lives, from eco-conscious home improvements to mindful consumption habits.
 
 
 
-            <br>
-            Community events and local gatherings are gaining popularity as people seek to strengthen their social ties and engage with their local neighborhoods. From farmers' markets and cultural festivals to volunteering and social clubs, there is a renewed interest in participating in community activities that foster connection and engagement. These activities not only provide opportunities for social interaction but also support local businesses and initiatives.
+
+          <br>
+          One prominent trend is the adoption of green building practices and sustainable home design. Many homeowners
+          are investing in energy-efficient appliances, renewable energy sources, and eco-friendly materials. For
+          example, solar panels and green roofs are becoming more common, providing both environmental benefits and cost
+          savings. The use of recycled and upcycled materials in home decor and renovation projects also reflects a
+          commitment to reducing waste and promoting sustainable living.
+
+
+
+
+          <br><br>
+          In addition to home improvements, sustainable fashion and responsible consumption are gaining popularity. The
+          rise of eco-friendly fashion brands and second-hand shopping reflects a shift towards more conscious
+          consumerism. Many people are choosing to invest in high-quality, durable clothing items and supporting brands
+          that prioritize ethical production practices. This trend towards sustainable fashion highlights a broader
+          awareness of the environmental impact of clothing and a desire to make more responsible choices.
+
+
 
 
 
         </p>
-         
-          <h4 class="mt-5 text-xl text-bold">Conclusion</h4>
-          <p class="text-zinc-600">
-            In 2024, the lifestyle trends in the USA reflect a dynamic interplay between technology, sustainability, and personal well-being. From innovative health and wellness practices to advancements in smart home technology and a renewed focus on eco-friendly living, these trends highlight how Americans are adapting to contemporary challenges and opportunities. As we continue to navigate the evolving landscape of lifestyle, it is clear that a blend of tradition and modernity will shape the future of how we live, work, and engage with the world around us. Whether through embracing new technologies, prioritizing sustainability, or seeking balance in our digital and offline lives, the trends of 2024 offer a glimpse into a future where lifestyle choices are increasingly informed by a desire for both innovation and harmony.
+
+
+        <h4 class="mt-5 text-xl text-bold">
+          Work-Life Balance: Redefining Professional and Personal Life
+
+
+        </h4>
+        <p class="text-zinc-600">
+          The concept of work-life balance has evolved significantly in 2024, driven by changes in the workplace and
+          shifting priorities. The rise of remote work and flexible working arrangements has transformed how people
+          approach their professional and personal lives. Many Americans are seeking ways to achieve a better balance
+          between work responsibilities and personal fulfillment.
+
+
+          <br>
+          Remote work has become a permanent fixture for many, leading to the creation of home office spaces that are
+          both functional and aesthetically pleasing. The emphasis on creating a productive and comfortable work
+          environment at home reflects a desire to blend work and personal life seamlessly. This trend has also led to
+          an increased focus on mental health and well-being in the workplace, with companies offering support programs
+          and resources to help employees manage stress and maintain a healthy work-life balance.
 
 
         </p>
-        </article>
-        <aside class="md:col-span-3 space-y-5 h-full">
-          <!-- aside Countries  -->
-          <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
-            <h6 class="text-xl font-bold mb-3">Latest Blogs</h6>
-            <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
-              <div class="w-16 h-full bg-red-600 rounded-xl"></div>
-            </div>
-            <ul class="space-y-5 flex flex-col capitalize">
-             
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="https://nunforest.com/mite-demo/upload/single/2@2x.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 days | By Sam</p>
-                </div>
-              </li>
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="https://nunforest.com/mite-demo/upload/single/2@2x.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 days | By Sam</p>
-                </div>
-              </li>
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="https://nunforest.com/mite-demo/upload/single/2@2x.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 days | By Sam</p>
-                </div>
-              </li>
-              <li class="cursor-pointer space-y-2">
-                <img
-                  src="https://nunforest.com/mite-demo/upload/single/2@2x.jpg"
-                  alt=""
-                  class="w-full h-40 object-cover rounded-lg"
-                />
-                <div>
-                  <h2 class="text-lg font-bold line-clamp-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  </h2>
-                  <p class="text-sm text-zinc-500">1 days | By Sam</p>
-                </div>
-              </li>
-            </ul>
+
+        <h4 class="mt-5 text-xl text-bold">
+          Cultural and Social Connections: Fostering Community and Engagement
+
+
+        </h4>
+        <p class="text-zinc-600">
+          In 2024, fostering cultural and social connections has become a significant focus, reflecting a desire for
+          meaningful engagement and community. Social media and digital platforms continue to play a role in connecting
+          people, but there is also a growing emphasis on face-to-face interactions and community-building activities.
+
+
+
+          <br>
+          Community events and local gatherings are gaining popularity as people seek to strengthen their social ties
+          and engage with their local neighborhoods. From farmers' markets and cultural festivals to volunteering and
+          social clubs, there is a renewed interest in participating in community activities that foster connection and
+          engagement. These activities not only provide opportunities for social interaction but also support local
+          businesses and initiatives.
+
+
+
+        </p>
+
+        <h4 class="mt-5 text-xl text-bold">Conclusion</h4>
+        <p class="text-zinc-600">
+          In 2024, the lifestyle trends in the USA reflect a dynamic interplay between technology, sustainability, and
+          personal well-being. From innovative health and wellness practices to advancements in smart home technology
+          and a renewed focus on eco-friendly living, these trends highlight how Americans are adapting to contemporary
+          challenges and opportunities. As we continue to navigate the evolving landscape of lifestyle, it is clear that
+          a blend of tradition and modernity will shape the future of how we live, work, and engage with the world
+          around us. Whether through embracing new technologies, prioritizing sustainability, or seeking balance in our
+          digital and offline lives, the trends of 2024 offer a glimpse into a future where lifestyle choices are
+          increasingly informed by a desire for both innovation and harmony.
+
+
+        </p>
+      </article>
+      <aside class="md:col-span-3 space-y-5 h-full">
+        <!-- aside Countries  -->
+        <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
+          <h6 class="text-xl font-bold mb-3">Latest Blogs</h6>
+          <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
+            <div class="w-16 h-full bg-red-600 rounded-xl"></div>
           </div>
-        </aside>
-      </div>
-    </section>
-   
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="swiper.js"></script>
-    <script src="index.js"></script>
-  </body>
+          <ul class="space-y-5 flex flex-col capitalize">
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/fashion/met1.webp" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <a href="../lifestyle/lifestyle-1.html">
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    The Best Celebrity Fashion Moments of 2024: Trends, Hits, and Iconic Looks
+                  </h2>
+                </a>
+                <p class="text-sm text-zinc-500">1 days | By Sam</p>
+              </div>
+            </li>
+
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/fashion/gala2.webp" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <a href="../lifestyle/lifestyle-2.html">
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    The Pinnacle of Celebrity Fashion in 2024: Iconic Looks and Emerging Trends
+                  </h2>
+                </a>
+                <p class="text-sm text-zinc-500">1 days | By Sam</p>
+              </div>
+            </li>
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/fashion/met3.webp" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <a href="../lifestyle/lifestyle-3.html">
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    2024 Celebrity Fashion Trends: Iconic Moments and Influential Styles
+                  </h2>
+                </a>
+                <p class="text-sm text-zinc-500">1 days | By Sam</p>
+              </div>
+            </li>
+            <li class="cursor-pointer space-y-2">
+              <img src="../assets/fashion/4.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
+              <div>
+                <a href="../lifestyle/lifestyle-4.html">
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    2024 Celebrity Fashion: Unveiling the Year’s Most Influential Styles and Trends
+                  </h2>
+                </a>
+                <p class="text-sm text-zinc-500">1 days | By Sam</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="../index.js"></script>
+</body>
+
 </html>
