@@ -1,269 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glamoursome</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4d509971f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../tailwind.js"></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Glamoursome</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/4d509971f0.js" crossorigin="anonymous"></script>
-  <script src="../tailwind.js"></script>
-  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-
-<body class="bg-zinc-50 antialiased roboto-regular">
-  <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
-    <!-- desktop navbar   -->
-    <nav
-      class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden">
-      <!-- logo  -->
-      <div class="cursor-pointer">
-        <a src="/" class="text-xl font-bold">GLAMOURSOME</a>
-      </div>
-      <ul class="flex gap-5 uppercase">
-        <a src="../index.html" class="hover:text-red-600">
-          <li class="cursor-pointer">Home</li>
-        </a>
-        <a src="/fashion/fashion.html" class="hover:text-red-600">
-          <li class="cursor-pointer">Fashion</li>
-        </a>
-        <a src="/relationship/relationship.html" class="hover:text-red-600">
-          <li class="cursor-pointer">Relationship</li>
-        </a>
-        <a src="/lifestyle/lifestyle.html" class="hover:text-red-600">
-          <li class="cursor-pointer">Lifestyle</li>
-        </a>
-        <a src="/beauty/beauty.html" class="hover:text-red-600">
-          <li class="cursor-pointer">Beauty</li>
-        </a>
-        <a src="#" class="hover:text-red-600">
-          <li class="cursor-pointer">Travel</li>
-        </a>
-      </ul>
-    </nav>
-    <!-- mobile navbar   -->
-    <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
-      <!-- logo  -->
-      <div>
-        <p class="text-xl font-bold">GLAMOURSOME</p>
-      </div>
-      <div class="off-screen-menu p-5 flex flex-col gap-5">
-        <ul class="w-full open-dropdown flex-col items-center">
-          <div>
-            <p class="text-xl font-bold">GLAMOURSOME</p>
-          </div>
-          <li>
-            <a src="/index.html" class="hover:text-red-600 cursor-pointer">Home</a>
-          </li>
-          <li>
-            <a src="/fashion/fashion.html" class="hover:text-red-600 cursor-pointer">Fashion</a>
-          </li>
-          <li>
-            <a src="/relationship/relationship.html" class="hover:text-red-600 cursor-pointer">Relationship</a>
-          </li>
-          <li>
-            <a src="/lifestyle/lifestyle.html" class="hover:text-red-600 cursor-pointer">Lifestyle</a>
-          </li>
-          <li>
-            <a src="/beauty/beauty.html" class="hover:text-red-600 cursor-pointer">Beauty</a>
-          </li>
-          <li>
-            <a src="#" class="hover:text-red-600 cursor-pointer">Travel</a>
-          </li>
+  <body class="bg-zinc-50 antialiased roboto-regular">
+    <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
+      <!-- desktop navbar   -->
+      <nav
+        class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden"
+      >
+        <!-- logo  -->
+        <div class="cursor-pointer">
+          <a href="/" class="text-xl font-bold">GLAMOURSOME</a>
+        </div>
+        <ul class="flex gap-5 uppercase">
+          <a href="../index.html" class="hover:text-red-600">
+            <li class="cursor-pointer">Home</li>
+          </a>
+          <a href="/fashion/fashion.html" class="hover:text-red-600">
+            <li class="cursor-pointer">Fashion</li>
+          </a>
+          <a href="/relationship/relationship.html" class="hover:text-red-600">
+            <li class="cursor-pointer">Relationship</li>
+          </a>
+          <a href="/lifestyle/lifestyle.html" class="hover:text-red-600">
+            <li class="cursor-pointer">Lifestyle</li>
+          </a>
+          <a href="/beauty/beauty.html" class="hover:text-red-600">
+            <li class="cursor-pointer">Beauty</li>
+          </a>
+          <a href="/travel/travel.html" class="hover:text-red-600">
+            <li class="cursor-pointer">Travel</li>
+          </a>
         </ul>
-      </div>
-      <nav>
-        <div class="ham-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </nav>
-    </nav>
-  </header>
-  <!-- Banner 3 Card Section  -->
-  <section class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24">
-    <div class="grid grid-cols-1 md:grid-cols-10 gap-5 relative">
-      <article class="md:col-span-7 space-y-8 text-zinc-900 text-justify">
-        <img src="../assets/beauty/b1.jpg" alt="blog" class="w-full h-[20rem] md:h-[28rem] object-cover" />
+      <!-- mobile navbar   -->
+      <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
+        <!-- logo  -->
         <div>
-          <p class="text-sm capitalize text-red-600">beauty</p>
-          <h2 class="text-3xl font-bold mb-3">
-            Glowy Golden Girl: Embracing Radiant Beauty Inside & Out
-          </h2>
-          <p class="text-sm text-zinc-400">01/08/2024 | By Admin</p>
+          <p class="text-xl font-bold">GLAMOURSOME</p>
         </div>
-        <p class="text-zinc-600">
-          Embracing radiant beauty is not just about the external appearance; it’s a celebration of inner confidence,
-          self-love, and holistic well-being. The concept of being a "glowy golden girl" reflects a harmonious balance
-          between inner vitality and outer radiance. This guide explores how to achieve and maintain a glowing
-          appearance through a combination of self-care practices, positive mindset, and embracing your unique beauty.
-        </p>
-        <p class="text-2xl text-center">
-          “Beauty begins the moment you decide to be yourself.” – Coco Chanel
-        </p>
-        <h4 class="mt-5 text-xl font-bold">Cultivating Inner Radiance</h4>
-        <p class="text-zinc-600">
-          True beauty starts from within. Cultivating inner radiance involves fostering a positive mindset, practicing
-          self-love, and nurturing your emotional well-being. It’s about embracing your authentic self and building
-          confidence that shines through in every aspect of your life.
-        </p>
-        <p class="text-zinc-600">
-          Practicing gratitude, engaging in positive self-talk, and surrounding yourself with supportive people are
-          essential for inner glow. When you feel good about yourself and your life, it reflects in your demeanor,
-          creating an aura of natural beauty. Embracing your individuality and celebrating your achievements are
-          powerful ways to boost inner confidence.
-        </p>
-        <h4 class="mt-5 text-xl font-bold">Skincare: The Foundation of a Radiant Glow</h4>
-        <p class="text-zinc-600">
-          A consistent skincare routine is vital for achieving and maintaining a radiant complexion. Your skin reflects
-          your overall health, so nurturing it with proper care is essential. This includes cleansing, exfoliating,
-          moisturizing, and protecting your skin from environmental damage.
-        </p>
-        <p class="text-zinc-600">
-          Choosing products that suit your skin type and addressing specific concerns, such as dryness or blemishes, can
-          enhance your natural glow. Incorporating ingredients like vitamin C, hyaluronic acid, and antioxidants can
-          help brighten and hydrate your skin, giving it a healthy, luminous appearance. Regular facials and staying
-          hydrated are also key to maintaining a glowing complexion.
-        </p>
-        <h4 class="mt-5 text-xl font-bold">Healthy Lifestyle Choices</h4>
-        <p class="text-zinc-600">
-          Your lifestyle choices significantly impact your overall radiance. A balanced diet, regular exercise, and
-          adequate sleep are fundamental to achieving a glowing appearance. Eating a variety of fruits, vegetables, and
-          whole grains provides essential nutrients that support skin health and vitality.
-        </p>
-        <p class="text-zinc-600">
-          Regular physical activity improves circulation, which helps to deliver oxygen and nutrients to your skin.
-          Exercise also promotes a healthy, youthful appearance by reducing stress and enhancing your overall mood.
-          Additionally, prioritizing sleep allows your body to repair and rejuvenate, contributing to a fresh and
-          radiant look.
-        </p>
-        <div class="grid grid-cols-2 gap-5">
-          <img src="../assets/beauty/b11.jpg" alt="blog" class="w-full h-64 object-cover" />
-          <img src="../assets/beauty/b12.jpg" alt="blog" class="w-full h-64 object-cover" />
-        </div>
-        <h4 class="mt-5 text-xl font-bold">Makeup Tips for a Natural Glow</h4>
-        <p class="text-zinc-600">
-          Makeup can enhance your natural radiance, but it’s important to choose products and techniques that complement
-          your individual beauty. Opting for lightweight, hydrating products and focusing on a dewy finish can create a
-          fresh, glowing look.
-        </p>
-        <p class="text-zinc-600">
-          Using a primer with illuminating properties can provide a luminous base, while highlighters can accentuate
-          your features and give your skin a radiant sheen. Choosing a foundation that matches your skin tone and has a
-          natural finish helps maintain a seamless glow. Don’t forget to use blush and bronzer to add warmth and
-          dimension to your face.
-        </p>
-        <h4 class="mt-5 text-xl font-bold">Embracing Your Unique Beauty</h4>
-        <p class="text-zinc-600">
-          Radiant beauty is about embracing your unique features and celebrating what makes you different. It’s
-          important to move away from conventional standards of beauty and focus on what makes you feel beautiful and
-          confident.
-        </p>
-        <p class="text-zinc-600">
-          Embracing your individuality involves appreciating your natural attributes and being confident in your
-          appearance. Whether it’s your skin tone, hair texture, or facial features, celebrating your unique beauty
-          enhances your overall glow. Confidence is the key to radiance, and when you embrace who you are, it shines
-          through effortlessly.
-        </p>
-        <h4 class="mt-5 text-xl font-bold">The Role of Self-Care</h4>
-        <p class="text-zinc-600">
-          Self-care plays a crucial role in maintaining a radiant appearance. Taking time for yourself, whether through
-          relaxing baths, meditation, or hobbies, helps reduce stress and promote overall well-being. Self-care routines
-          allow you to recharge and rejuvenate, contributing to your natural glow.
-        </p>
-        <p class="text-zinc-600">
-          Engaging in activities that bring you joy and practicing mindfulness are essential for emotional and physical
-          well-being. Creating a self-care ritual that suits your needs and preferences helps you feel balanced and
-          refreshed, enhancing your inner and outer beauty.
-        </p>
-        <h4 class="mt-5 text-xl font-bold">Radiance Beyond Appearance</h4>
-        <p class="text-zinc-600">
-          Radiance extends beyond physical appearance; it encompasses your energy, attitude, and interactions with
-          others. Cultivating a positive attitude, showing kindness, and being genuine in your interactions contribute
-          to your overall glow. Your presence and demeanor play a significant role in how you are perceived.
-        </p>
-        <p class="text-zinc-600">
-          Being confident, approachable, and engaging enhances your radiance and creates a positive impact on those
-          around you. It’s about being true to yourself and radiating positivity and warmth in every interaction. This
-          holistic approach to beauty fosters a genuine and lasting glow.
-        </p>
-        <h4 class="mt-5 text-xl font-bold">Conclusion</h4>
-        <p class="text-zinc-600">
-          Embracing the concept of being a "glowy golden girl" involves nurturing both inner and outer beauty. By
-          cultivating self-love, maintaining a healthy lifestyle, and celebrating your unique attributes, you can
-          achieve a radiant appearance that reflects your true self. Self-care, positive mindset, and embracing your
-          individuality are key components of this holistic approach to beauty.
-        </p>
-        <p class="text-zinc-600">
-          As Coco Chanel wisely said, “Beauty begins the moment you decide to be yourself.” Embracing your authentic
-          self, taking care of your well-being, and radiating confidence create a glow that is both captivating and
-          enduring. Celebrate your inner and outer beauty and let your radiance shine brightly.
-        </p>
-      </article>
-
-
-      <aside class="md:col-span-3 space-y-5 h-full">
-        <!-- aside Countries  -->
-        <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
-          <h6 class="text-xl font-bold mb-3">Latest Blogs</h6>
-          <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
-            <div class="w-16 h-full bg-red-600 rounded-xl"></div>
-          </div>
-          <ul class="space-y-5 flex flex-col capitalize">
-            <li class="cursor-pointer space-y-2">
-              <img src="../assets/beauty/b1.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
-              <div>
-                <h2 class="text-lg font-bold line-clamp-2">
-                  Glowy Golden Girl: Embracing Radiant Beauty Inside & Out
-                </h2>
-                <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
-              </div>
+        <div class="off-screen-menu p-5 flex flex-col gap-5">
+          <ul class="w-full open-dropdown flex-col items-center">
+            <div>
+              <p class="text-xl font-bold">GLAMOURSOME</p>
+            </div>
+            <li>
+              <a href="/" class="hover:text-red-600 cursor-pointer">Home</a>
             </li>
-            <li class="cursor-pointer space-y-2">
-              <img src="../assets/beauty/b2.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
-              <div>
-                <h2 class="text-lg font-bold line-clamp-2">
-                  Sundays Are For Skincare: Weekly Rituals for Healthy Skin
-                </h2>
-                <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
-              </div>
+            <li>
+              <a
+                href="/fashion/fashion.html"
+                class="hover:text-red-600 cursor-pointer"
+                >Fashion</a
+              >
             </li>
-            <li class="cursor-pointer space-y-2">
-              <img src="../assets/beauty/b3.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
-              <div>
-                <h2 class="text-lg font-bold line-clamp-2">
-                  Beauty From Nature: Exploring Organic and Sustainable Beauty Products
-                </h2>
-                <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
-              </div>
+            <li>
+              <a
+                href="/relationship/relationship.html"
+                class="hover:text-red-600 cursor-pointer"
+                >relationship</a
+              >
             </li>
-            <li class="cursor-pointer space-y-2">
-              <img src="../assets/beauty/b4.jpg" alt="" class="w-full h-40 object-cover rounded-lg" />
-              <div>
-                <h2 class="text-lg font-bold line-clamp-2">
-                  Pretty Much Imperfect: Celebrating Authentic Beauty in All Its Forms
-                </h2>
-                <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
-              </div>
+            <li>
+              <a
+                href="/lifestyle/lifestyle.html"
+                class="hover:text-red-600 cursor-pointer"
+                >lifestyle</a
+              >
+            </li>
+            <li>
+              <a
+                href="/beauty/beauty.html"
+                class="hover:text-red-600 cursor-pointer"
+                >beauty</a
+              >
+            </li>
+            <li>
+              <a
+                href="/fashion/fashion.html"
+                class="hover:text-red-600 cursor-pointer"
+                >FASHION</a
+              >
             </li>
           </ul>
         </div>
-      </aside>
-    </div>
-  </section>
+        <nav>
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </nav>
+    </header>
+    <!-- Banner 3 Card Section  -->
+    <section
+      class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-10 gap-5 relative">
+        <article class="md:col-span-7 space-y-8 text-zinc-900 text-justify">
+          <img
+            src="../assets/beauty/b1.jpg"
+            alt="blog"
+            class="w-full h-[20rem] md:h-[28rem] object-cover"
+          />
+          <div>
+            <p class="text-sm capitalize text-red-600">beauty</p>
+            <h2 class="text-3xl font-bold mb-3">
+              Glowy Golden Girl: Embracing Radiant Beauty Inside & Out
+            </h2>
+            <p class="text-sm text-zinc-400">01/08/2024 | By Admin</p>
+          </div>
+          <p class="text-zinc-600">
+            Embracing radiant beauty is not just about the external appearance;
+            it’s a celebration of inner confidence, self-love, and holistic
+            well-being. The concept of being a "glowy golden girl" reflects a
+            harmonious balance between inner vitality and outer radiance. This
+            guide explores how to achieve and maintain a glowing appearance
+            through a combination of self-care practices, positive mindset, and
+            embracing your unique beauty.
+          </p>
+          <p class="text-2xl text-center">
+            “Beauty begins the moment you decide to be yourself.” – Coco Chanel
+          </p>
+          <h4 class="mt-5 text-xl font-bold">Cultivating Inner Radiance</h4>
+          <p class="text-zinc-600">
+            True beauty starts from within. Cultivating inner radiance involves
+            fostering a positive mindset, practicing self-love, and nurturing
+            your emotional well-being. It’s about embracing your authentic self
+            and building confidence that shines through in every aspect of your
+            life.
+          </p>
+          <p class="text-zinc-600">
+            Practicing gratitude, engaging in positive self-talk, and
+            surrounding yourself with supportive people are essential for inner
+            glow. When you feel good about yourself and your life, it reflects
+            in your demeanor, creating an aura of natural beauty. Embracing your
+            individuality and celebrating your achievements are powerful ways to
+            boost inner confidence.
+          </p>
+          <h4 class="mt-5 text-xl font-bold">
+            Skincare: The Foundation of a Radiant Glow
+          </h4>
+          <p class="text-zinc-600">
+            A consistent skincare routine is vital for achieving and maintaining
+            a radiant complexion. Your skin reflects your overall health, so
+            nurturing it with proper care is essential. This includes cleansing,
+            exfoliating, moisturizing, and protecting your skin from
+            environmental damage.
+          </p>
+          <p class="text-zinc-600">
+            Choosing products that suit your skin type and addressing specific
+            concerns, such as dryness or blemishes, can enhance your natural
+            glow. Incorporating ingredients like vitamin C, hyaluronic acid, and
+            antioxidants can help brighten and hydrate your skin, giving it a
+            healthy, luminous appearance. Regular facials and staying hydrated
+            are also key to maintaining a glowing complexion.
+          </p>
+          <h4 class="mt-5 text-xl font-bold">Healthy Lifestyle Choices</h4>
+          <p class="text-zinc-600">
+            Your lifestyle choices significantly impact your overall radiance. A
+            balanced diet, regular exercise, and adequate sleep are fundamental
+            to achieving a glowing appearance. Eating a variety of fruits,
+            vegetables, and whole grains provides essential nutrients that
+            support skin health and vitality.
+          </p>
+          <p class="text-zinc-600">
+            Regular physical activity improves circulation, which helps to
+            deliver oxygen and nutrients to your skin. Exercise also promotes a
+            healthy, youthful appearance by reducing stress and enhancing your
+            overall mood. Additionally, prioritizing sleep allows your body to
+            repair and rejuvenate, contributing to a fresh and radiant look.
+          </p>
+          <div class="grid grid-cols-2 gap-5">
+            <img
+              src="../assets/beauty/b11.jpg"
+              alt="blog"
+              class="w-full h-64 object-cover"
+            />
+            <img
+              src="../assets/beauty/b12.jpg"
+              alt="blog"
+              class="w-full h-64 object-cover"
+            />
+          </div>
+          <h4 class="mt-5 text-xl font-bold">Makeup Tips for a Natural Glow</h4>
+          <p class="text-zinc-600">
+            Makeup can enhance your natural radiance, but it’s important to
+            choose products and techniques that complement your individual
+            beauty. Opting for lightweight, hydrating products and focusing on a
+            dewy finish can create a fresh, glowing look.
+          </p>
+          <p class="text-zinc-600">
+            Using a primer with illuminating properties can provide a luminous
+            base, while highlighters can accentuate your features and give your
+            skin a radiant sheen. Choosing a foundation that matches your skin
+            tone and has a natural finish helps maintain a seamless glow. Don’t
+            forget to use blush and bronzer to add warmth and dimension to your
+            face.
+          </p>
+          <h4 class="mt-5 text-xl font-bold">Embracing Your Unique Beauty</h4>
+          <p class="text-zinc-600">
+            Radiant beauty is about embracing your unique features and
+            celebrating what makes you different. It’s important to move away
+            from conventional standards of beauty and focus on what makes you
+            feel beautiful and confident.
+          </p>
+          <p class="text-zinc-600">
+            Embracing your individuality involves appreciating your natural
+            attributes and being confident in your appearance. Whether it’s your
+            skin tone, hair texture, or facial features, celebrating your unique
+            beauty enhances your overall glow. Confidence is the key to
+            radiance, and when you embrace who you are, it shines through
+            effortlessly.
+          </p>
+          <h4 class="mt-5 text-xl font-bold">The Role of Self-Care</h4>
+          <p class="text-zinc-600">
+            Self-care plays a crucial role in maintaining a radiant appearance.
+            Taking time for yourself, whether through relaxing baths,
+            meditation, or hobbies, helps reduce stress and promote overall
+            well-being. Self-care routines allow you to recharge and rejuvenate,
+            contributing to your natural glow.
+          </p>
+          <p class="text-zinc-600">
+            Engaging in activities that bring you joy and practicing mindfulness
+            are essential for emotional and physical well-being. Creating a
+            self-care ritual that suits your needs and preferences helps you
+            feel balanced and refreshed, enhancing your inner and outer beauty.
+          </p>
+          <h4 class="mt-5 text-xl font-bold">Radiance Beyond Appearance</h4>
+          <p class="text-zinc-600">
+            Radiance extends beyond physical appearance; it encompasses your
+            energy, attitude, and interactions with others. Cultivating a
+            positive attitude, showing kindness, and being genuine in your
+            interactions contribute to your overall glow. Your presence and
+            demeanor play a significant role in how you are perceived.
+          </p>
+          <p class="text-zinc-600">
+            Being confident, approachable, and engaging enhances your radiance
+            and creates a positive impact on those around you. It’s about being
+            true to yourself and radiating positivity and warmth in every
+            interaction. This holistic approach to beauty fosters a genuine and
+            lasting glow.
+          </p>
+          <h4 class="mt-5 text-xl font-bold">Conclusion</h4>
+          <p class="text-zinc-600">
+            Embracing the concept of being a "glowy golden girl" involves
+            nurturing both inner and outer beauty. By cultivating self-love,
+            maintaining a healthy lifestyle, and celebrating your unique
+            attributes, you can achieve a radiant appearance that reflects your
+            true self. Self-care, positive mindset, and embracing your
+            individuality are key components of this holistic approach to
+            beauty.
+          </p>
+          <p class="text-zinc-600">
+            As Coco Chanel wisely said, “Beauty begins the moment you decide to
+            be yourself.” Embracing your authentic self, taking care of your
+            well-being, and radiating confidence create a glow that is both
+            captivating and enduring. Celebrate your inner and outer beauty and
+            let your radiance shine brightly.
+          </p>
+        </article>
 
-  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="../swiper.js"></script>
-  <script src="../index.js"></script>
-</body>
+        <aside class="md:col-span-3 space-y-5 h-full">
+          <!-- aside Countries  -->
+          <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
+            <h6 class="text-xl font-bold mb-3">Latest Blogs</h6>
+            <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
+              <div class="w-16 h-full bg-red-600 rounded-xl"></div>
+            </div>
+            <ul class="space-y-5 flex flex-col capitalize">
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/beauty/b1.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    Glowy Golden Girl: Embracing Radiant Beauty Inside & Out
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/beauty/b2.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    Sundays Are For Skincare: Weekly Rituals for Healthy Skin
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/beauty/b3.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    Beauty From Nature: Exploring Organic and Sustainable Beauty
+                    Products
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/beauty/b4.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    Pretty Much Imperfect: Celebrating Authentic Beauty in All
+                    Its Forms
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
 
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../swiper.js"></script>
+    <script src="../index.js"></script>
+  </body>
 </html>
