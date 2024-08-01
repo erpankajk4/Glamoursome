@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glamoursome</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4d509971f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../tailwind.js"></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body class="bg-zinc-50 antialiased roboto-regular">
+    <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
+      <!-- desktop navbar   -->
+      <nav
+        class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden"
+      >
+        <!-- logo  -->
+        <div class="cursor-pointer">
+          <a src="/" class="text-xl font-bold">GLAMOURSOME</a>
+        </div>
+        <ul class="flex gap-5 uppercase">
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">Home</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">Fashion</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">relationship</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">lifestyle</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">beauty</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">travel</li></a
+          >
+        </ul>
+      </nav>
+      <!-- mobile navbar   -->
+      <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
+        <!-- logo  -->
+        <div>
+          <p class="text-xl font-bold">GLAMOURSOME</p>
+        </div>
+        <div class="off-screen-menu p-5 flex flex-col gap-5">
+          <ul class="w-full open-dropdown flex-col items-center">
+            <div>
+              <p class="text-xl font-bold">GLAMOURSOME</p>
+            </div>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">Home</a>
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">Fashion</a>
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer"
+                >relationship</a
+              >
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">lifestyle</a>
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">beauty</a>
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">travel</a>
+            </li>
+          </ul>
+        </div>
+        <nav>
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </nav>
+    </header>
+    <!-- Banner 3 Card Section  -->
+    <section
+      class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-10 gap-5 relative">
+        <article class="md:col-span-7 space-y-8 text-zinc-900 text-justify">
+            <img
+              src="../assets/beauty/b4.jpg"
+              alt="blog"
+              class="w-full h-[20rem] md:h-[28rem] object-cover"
+            />
+            <div>
+              <p class="text-sm capitalize text-red-600">beauty</p>
+              <h2 class="text-3xl font-bold mb-3">
+                Beauty From Nature: Exploring Organic and Sustainable Beauty Products
+              </h2>
+              <p class="text-sm text-zinc-400">01/08/2024 | By Sam</p>
+            </div>
+            <p class="text-zinc-600">
+              As awareness of environmental and health issues grows, more people are turning to organic and sustainable beauty products. These products not only benefit your skin but also contribute to the well-being of our planet. This guide delves into the world of organic and sustainable beauty, highlighting their benefits, key ingredients, and how to incorporate them into your routine.
+            </p>
+            <p class="text-2xl text-center">
+              “The best way to find yourself is to lose yourself in the service of others.” – Mahatma Gandhi
+            </p>
+            <h4 class="mt-5 text-xl font-bold">The Rise of Organic Beauty</h4>
+            <p class="text-zinc-600">
+              Organic beauty products have gained popularity due to their natural composition and minimal environmental impact. Unlike conventional beauty products that often contain synthetic chemicals and preservatives, organic products are made from naturally derived ingredients that are free from harmful additives.
+            </p>
+            <p class="text-zinc-600">
+              These products are formulated with ingredients like essential oils, plant extracts, and natural butters that nourish and rejuvenate the skin. Organic beauty items are typically certified by organizations that ensure adherence to strict standards, providing a guarantee of their authenticity and purity.
+            </p>
+            <h4 class="mt-5 text-xl font-bold">Understanding Sustainable Beauty</h4>
+            <p class="text-zinc-600">
+              Sustainable beauty focuses on minimizing the environmental impact of beauty products throughout their lifecycle. This includes ethical sourcing of ingredients, eco-friendly packaging, and responsible manufacturing practices. Sustainable beauty aims to reduce waste, conserve resources, and support fair trade.
+            </p>
+            <p class="text-zinc-600">
+              Brands committed to sustainability often use recyclable or biodegradable packaging and prioritize ingredients that are ethically sourced. They may also implement practices like carbon offsetting and water conservation in their production processes. Choosing sustainable beauty products helps to support these eco-friendly initiatives and contribute to a healthier planet.
+            </p>
+            <div class="grid grid-cols-2 gap-5">
+              <img
+                src="../assets/beauty/b41.jpg"
+                alt="blog"
+                class="w-full h-64 object-cover"
+              />
+              <img
+                src="../assets/beauty/b42.jpg"
+                alt="blog"
+                class="w-full h-64 object-cover"
+              />
+            </div>
+            <h4 class="mt-5 text-xl font-bold">Key Ingredients to Look For</h4>
+            <p class="text-zinc-600">
+              When selecting organic and sustainable beauty products, it’s important to familiarize yourself with beneficial ingredients that enhance skin health. Look for products containing ingredients like aloe vera, green tea extract, rosehip oil, and shea butter. These components offer nourishing, anti-inflammatory, and antioxidant properties.
+            </p>
+            <p class="text-zinc-600">
+              Aloe vera soothes and hydrates the skin, while green tea extract provides antioxidant protection. Rosehip oil is rich in essential fatty acids that help with skin repair and rejuvenation, and shea butter offers deep moisturization and nourishment. Products featuring these ingredients are often effective and gentle on the skin.
+            </p>
+            <h4 class="mt-5 text-xl font-bold">Incorporating Organic and Sustainable Products</h4>
+            <p class="text-zinc-600">
+              Transitioning to organic and sustainable beauty products can be both exciting and rewarding. Start by evaluating your current skincare and makeup routines and identifying products that can be replaced with natural alternatives. Focus on high-impact items such as cleansers, moisturizers, and sunscreens.
+            </p>
+            <p class="text-zinc-600">
+              When introducing new products, patch test to ensure compatibility with your skin and observe how they integrate into your routine. Gradually build your collection with products that align with your skin type and beauty goals. Many brands offer sample sizes or trial kits, which can be a great way to explore new options without committing to full-sized products.
+            </p>
+            <h4 class="mt-5 text-xl font-bold">Benefits of Going Organic and Sustainable</h4>
+            <p class="text-zinc-600">
+              Choosing organic and sustainable beauty products offers numerous benefits for both your skin and the environment. Organic products are typically free from synthetic chemicals, reducing the risk of irritation and allergic reactions. They also tend to be gentler on the skin, promoting a healthier complexion.
+            </p>
+            <p class="text-zinc-600">
+              Sustainable products contribute to environmental conservation by minimizing waste and supporting ethical practices. By opting for eco-friendly packaging and supporting brands with sustainable initiatives, you actively participate in reducing your ecological footprint. This choice not only enhances your beauty routine but also aligns with a broader commitment to environmental stewardship.
+            </p>
+            <h4 class="mt-5 text-xl font-bold">Supporting Ethical Brands</h4>
+            <p class="text-zinc-600">
+              Supporting brands that prioritize organic and sustainable practices is essential for fostering positive change in the beauty industry. Look for companies with certifications such as USDA Organic, Ecocert, or Fair Trade, which signify adherence to rigorous standards of quality and ethical practices.
+            </p>
+            <p class="text-zinc-600">
+              Research brands that align with your values and offer transparency about their sourcing, production, and packaging processes. Many ethical brands also engage in charitable initiatives and community support, further enhancing the impact of your purchase. By choosing to support these brands, you contribute to a more sustainable and responsible beauty industry.
+            </p>
+            <h4 class="mt-5 text-xl font-bold">Conclusion</h4>
+            <p class="text-zinc-600">
+              Embracing organic and sustainable beauty products is a meaningful way to enhance your skincare routine while supporting environmental and ethical practices. By opting for natural ingredients and eco-friendly packaging, you not only nurture your skin but also contribute to a healthier planet.
+            </p>
+            <p class="text-zinc-600">
+              As Mahatma Gandhi wisely said, “The best way to find yourself is to lose yourself in the service of others.” By choosing products that align with your values and support sustainability, you make a positive impact on both your personal well-being and the world around you. Explore the beauty of nature through organic and sustainable products, and enjoy the benefits of a radiant and responsible skincare routine.
+            </p>
+          </article>
+          
+        <aside class="md:col-span-3 space-y-5 h-full">
+          <!-- aside Countries  -->
+          <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
+            <h6 class="text-xl font-bold mb-3">Latest Blogs</h6>
+            <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
+              <div class="w-16 h-full bg-red-600 rounded-xl"></div>
+            </div>
+            <ul class="space-y-5 flex flex-col capitalize">
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/beauty/b1.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    Glowy Golden Girl: Embracing Radiant Beauty Inside & Out
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/beauty/b2.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    Sundays Are For Skincare: Weekly Rituals for Healthy Skin
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/beauty/b3.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    Beauty From Nature: Exploring Organic and Sustainable Beauty Products
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/beauty/b4.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    Pretty Much Imperfect: Celebrating Authentic Beauty in All Its Forms
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../swiper.js"></script>
+    <script src="../index.js"></script>
+  </body>
+</html>
