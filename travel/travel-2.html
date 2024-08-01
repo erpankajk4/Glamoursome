@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glamoursome</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4d509971f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../tailwind.js"></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body class="bg-zinc-50 antialiased roboto-regular">
+    <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
+      <!-- desktop navbar   -->
+      <nav
+        class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden"
+      >
+        <!-- logo  -->
+        <div class="cursor-pointer">
+          <a src="/" class="text-xl font-bold">GLAMOURSOME</a>
+        </div>
+        <ul class="flex gap-5 uppercase">
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">Home</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">Fashion</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">relationship</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">lifestyle</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">beauty</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">travel</li></a
+          >
+        </ul>
+      </nav>
+      <!-- mobile navbar   -->
+      <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
+        <!-- logo  -->
+        <div>
+          <p class="text-xl font-bold">GLAMOURSOME</p>
+        </div>
+        <div class="off-screen-menu p-5 flex flex-col gap-5">
+          <ul class="w-full open-dropdown flex-col items-center">
+            <div>
+              <p class="text-xl font-bold">GLAMOURSOME</p>
+            </div>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">Home</a>
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">Fashion</a>
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer"
+                >relationship</a
+              >
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">lifestyle</a>
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">beauty</a>
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">travel</a>
+            </li>
+          </ul>
+        </div>
+        <nav>
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </nav>
+    </header>
+    <!-- Banner 3 Card Section  -->
+    <section
+      class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-10 gap-5 relative">
+        <article class="md:col-span-7 space-y-8 text-zinc-900 text-justify">
+            <img
+              src="../assets/travel/t2.jpg"
+              alt="blog"
+              class="w-full h-[20rem] md:h-[28rem] object-cover"
+            />
+            <div>
+              <p class="text-sm capitalize text-red-600">travel</p>
+              <h2 class="text-3xl font-bold mb-3">
+                Nomadic Narratives: Journeys Beyond the Ordinary
+              </h2>
+              <p class="text-sm text-zinc-400">01/08/2024 | By Sam</p>
+            </div>
+            <p class="text-zinc-600">
+              The allure of travel lies in its ability to transport us beyond the familiar and into the extraordinary. For those with a nomadic spirit, the quest for unique and transformative experiences drives their journeys. "Nomadic Narratives" delves into the essence of exploring beyond the ordinary, sharing stories and insights that capture the essence of adventure and discovery.
+            </p>
+            <p class="text-2xl text-center">
+              “The journey of a thousand miles begins with a single step.” – Lao Tzu
+            </p>
+            <h4 class="mt-5 text-xl font-bold">Seeking the Unconventional</h4>
+            <p class="text-zinc-600">
+              True adventure often lies off the beaten path. Seeking the unconventional involves stepping away from popular tourist destinations and immersing oneself in lesser-known locales that offer a more authentic glimpse into local life. These hidden gems often reveal the soul of a place and provide richer, more meaningful experiences.
+            </p>
+            <p class="text-zinc-600">
+              From exploring remote villages and secluded landscapes to participating in unique local traditions, venturing beyond the ordinary can lead to unexpected discoveries and personal growth. Embrace the unpredictability of these journeys, as they often bring the most memorable and enriching experiences.
+            </p>
+            <h4 class="mt-5 text-xl font-bold">Stories of Transformation</h4>
+            <p class="text-zinc-600">
+              Every journey has the potential to transform us. Whether it's overcoming challenges, encountering diverse cultures, or gaining new perspectives, travel has a profound impact on our personal growth. The stories of transformation are often the most compelling, illustrating how travel reshapes our understanding of ourselves and the world around us.
+            </p>
+            <p class="text-zinc-600">
+              Reflect on moments of transformation from your own travels. These might include overcoming fears, learning new skills, or forming unexpected connections. Sharing these narratives not only inspires others but also deepens our appreciation for the transformative power of exploration.
+            </p>
+            <div class="grid grid-cols-2 gap-5">
+              <img
+                src="../assets/travel/t21.jpg"
+                alt="blog"
+                class="w-full h-64 object-cover"
+              />
+              <img
+                src="../assets/travel/t22.jpg"
+                alt="blog"
+                class="w-full h-64 object-cover"
+              />
+            </div>
+            <h4 class="mt-5 text-xl font-bold">The Art of Immersive Travel</h4>
+            <p class="text-zinc-600">
+              Immersive travel goes beyond sightseeing to deeply engaging with the culture and environment of a destination. It involves living like a local, understanding the rhythms of daily life, and participating in meaningful activities that connect you with the essence of a place.
+            </p>
+            <p class="text-zinc-600">
+              Whether it’s through staying with local families, volunteering, or learning traditional crafts, immersive travel fosters a deeper connection and appreciation for the places you visit. This approach enriches your experience and creates lasting memories that go beyond the superficial.
+            </p>
+            <h4 class="mt-5 text-xl font-bold">Challenges and Rewards of Nomadic Life</h4>
+            <p class="text-zinc-600">
+              Embracing a nomadic lifestyle comes with its own set of challenges, from navigating diverse cultures and languages to managing logistics and maintaining a sense of home. However, these challenges are often outweighed by the rewards of freedom, adventure, and the continuous learning that comes with life on the road.
+            </p>
+            <p class="text-zinc-600">
+              Each challenge faced during travel contributes to personal resilience and adaptability. Embrace these experiences as opportunities for growth and reflection. The rewards of living a nomadic life include a broader worldview, deeper cultural understanding, and a collection of unforgettable experiences.
+            </p>
+            <h4 class="mt-5 text-xl font-bold">Embracing the Journey</h4>
+            <p class="text-zinc-600">
+              The essence of nomadic travel lies in embracing the journey itself. It’s not just about the destinations but also the experiences, lessons, and connections made along the way. By staying open to new possibilities and embracing the uncertainties of travel, you allow yourself to fully experience the magic of exploration.
+            </p>
+            <p class="text-zinc-600">
+              Celebrate the journey by being present and engaged in each moment. Reflect on the experiences that have shaped your travels and the personal growth that has emerged from them. Embracing the journey with an open heart and mind enhances the richness of your travel narrative and deepens your connection to the world.
+            </p>
+            <h4 class="mt-5 text-xl font-bold">Conclusion</h4>
+            <p class="text-zinc-600">
+              "Nomadic Narratives" capture the essence of exploring beyond the ordinary, sharing stories of transformation, immersive experiences, and the challenges and rewards of a nomadic lifestyle. These narratives highlight the profound impact of travel on personal growth and the joy of discovering the world's hidden gems.
+            </p>
+            <p class="text-zinc-600">
+              As Lao Tzu wisely said, “The journey of a thousand miles begins with a single step.” Embrace each step of your journey, cherish the transformative moments, and let your travels inspire and enrich your life in ways that go beyond the ordinary.
+            </p>
+          </article>
+          
+
+        <aside class="md:col-span-3 space-y-5 h-full">
+          <!-- aside Countries  -->
+          <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
+            <h6 class="text-xl font-bold mb-3">Latest Blogs</h6>
+            <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
+              <div class="w-16 h-full bg-red-600 rounded-xl"></div>
+            </div>
+            <ul class="space-y-5 flex flex-col capitalize">
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/travel/t1.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    Globetrotter’s Gazette: Chronicles of a World Explorer
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/travel/t2.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    similarly write for
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/travel/t3.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    Wanderlust Writings: Tales from the Open Road
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/travel/t4.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    The Wayfarer’s World: Discovering Hidden Gems
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../swiper.js"></script>
+    <script src="../index.js"></script>
+  </body>
+</html>

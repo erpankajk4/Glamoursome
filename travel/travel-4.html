@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glamoursome</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4d509971f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../tailwind.js"></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body class="bg-zinc-50 antialiased roboto-regular">
+    <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
+      <!-- desktop navbar   -->
+      <nav
+        class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden"
+      >
+        <!-- logo  -->
+        <div class="cursor-pointer">
+          <a src="/" class="text-xl font-bold">GLAMOURSOME</a>
+        </div>
+        <ul class="flex gap-5 uppercase">
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">Home</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">Fashion</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">relationship</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">lifestyle</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">beauty</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">travel</li></a
+          >
+        </ul>
+      </nav>
+      <!-- mobile navbar   -->
+      <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
+        <!-- logo  -->
+        <div>
+          <p class="text-xl font-bold">GLAMOURSOME</p>
+        </div>
+        <div class="off-screen-menu p-5 flex flex-col gap-5">
+          <ul class="w-full open-dropdown flex-col items-center">
+            <div>
+              <p class="text-xl font-bold">GLAMOURSOME</p>
+            </div>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">Home</a>
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">Fashion</a>
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer"
+                >relationship</a
+              >
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">lifestyle</a>
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">beauty</a>
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">travel</a>
+            </li>
+          </ul>
+        </div>
+        <nav>
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </nav>
+    </header>
+    <!-- Banner 3 Card Section  -->
+    <section
+      class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-10 gap-5 relative">
+        <article class="md:col-span-7 space-y-8 text-zinc-900 text-justify">
+          <img
+            src="../assets/travel/t4.jpg"
+            alt="blog"
+            class="w-full h-[20rem] md:h-[28rem] object-cover"
+          />
+          <div>
+            <p class="text-sm capitalize text-red-600">travel</p>
+            <h2 class="text-3xl font-bold mb-3">
+              The Wayfarer’s World: Discovering Hidden Gems
+            </h2>
+            <p class="text-sm text-zinc-400">01/08/2024 | By Sam</p>
+          </div>
+          <p class="text-zinc-600">
+            For the intrepid traveler, the thrill of discovery often lies in
+            uncovering hidden gems that lie off the beaten path. "The Wayfarer’s
+            World" explores the allure of these lesser-known destinations and
+            the unique experiences they offer. It’s a celebration of the journey
+            to find those secret spots that make travel truly unforgettable.
+          </p>
+          <p class="text-2xl text-center">
+            “The world is a book, and those who do not travel read only one
+            page.” – Saint Augustine
+          </p>
+          <h4 class="mt-5 text-xl font-bold">The Allure of Hidden Gems</h4>
+          <p class="text-zinc-600">
+            Hidden gems are the unsung heroes of the travel world, offering a
+            sense of exclusivity and discovery that popular destinations often
+            lack. These off-the-beaten-path locations provide authentic
+            experiences, unique cultural insights, and a chance to escape the
+            crowds. The allure of hidden gems lies in their ability to offer a
+            more intimate and personal connection to the places you visit.
+          </p>
+          <p class="text-zinc-600">
+            Embrace the excitement of seeking out these hidden treasures by
+            exploring lesser-known locales, whether they are quaint villages,
+            secluded beaches, or undiscovered hiking trails. Each hidden gem has
+            its own story to tell and can provide a refreshing perspective on
+            the world beyond typical tourist attractions.
+          </p>
+          <h4 class="mt-5 text-xl font-bold">
+            The Joy of Uncharted Territories
+          </h4>
+          <p class="text-zinc-600">
+            Traveling to uncharted territories is an adventure that goes beyond
+            the conventional. It involves venturing into regions that may not be
+            highlighted in travel guides or maps but offer extraordinary
+            experiences nonetheless. This journey into the unknown often leads
+            to encounters with local cultures, breathtaking landscapes, and
+            authentic experiences that are not found in mainstream tourism.
+          </p>
+          <p class="text-zinc-600">
+            By embracing the spirit of exploration, you can uncover the beauty
+            and charm of these uncharted territories. These journeys not only
+            satisfy your wanderlust but also provide a deeper appreciation for
+            the diversity and richness of the world.
+          </p>
+          <div class="grid grid-cols-2 gap-5">
+            <img
+              src="../assets/travel/t41.jpg"
+              alt="blog"
+              class="w-full h-64 object-cover"
+            />
+            <img
+              src="../assets/travel/t42.jpg"
+              alt="blog"
+              class="w-full h-64 object-cover"
+            />
+          </div>
+          <h4 class="mt-5 text-xl font-bold">
+            Discovering Local Culture and Traditions
+          </h4>
+          <p class="text-zinc-600">
+            One of the greatest rewards of discovering hidden gems is the
+            opportunity to immerse yourself in local culture and traditions.
+            These destinations often provide a more authentic experience of
+            local life, allowing you to engage with community members,
+            participate in traditional ceremonies, and savor local cuisine.
+          </p>
+          <p class="text-zinc-600">
+            Engaging with the local culture enhances your travel experience and
+            fosters a deeper understanding of the places you visit. Embrace the
+            chance to learn from locals, appreciate their way of life, and
+            contribute to sustainable tourism by supporting local businesses and
+            practices.
+          </p>
+          <h4 class="mt-5 text-xl font-bold">
+            The Challenge of Finding Hidden Gems
+          </h4>
+          <p class="text-zinc-600">
+            Finding hidden gems requires more than just a sense of adventure; it
+            often involves research, local insights, and a willingness to stray
+            from the conventional path. It can be challenging to discover these
+            destinations, but the rewards are well worth the effort.
+          </p>
+          <p class="text-zinc-600">
+            Utilize resources such as local recommendations, travel forums, and
+            off-the-beaten-path guides to uncover these hidden treasures.
+            Additionally, be open to spontaneous discoveries and engage with
+            locals to gain insider knowledge on lesser-known attractions.
+          </p>
+          <h4 class="mt-5 text-xl font-bold">Embracing the Journey</h4>
+          <p class="text-zinc-600">
+            The journey to discover hidden gems is as much about the experience
+            as it is about the destination. Embrace the unpredictability and
+            excitement of exploring new places. Each hidden gem you uncover adds
+            a unique chapter to your travel story and enriches your
+            understanding of the world.
+          </p>
+          <p class="text-zinc-600">
+            Celebrate the adventure of seeking out these hidden treasures and
+            cherish the moments of discovery along the way. By embracing the
+            journey and appreciating the beauty of the unknown, you create
+            lasting memories and a deeper connection to the places you visit.
+          </p>
+          <h4 class="mt-5 text-xl font-bold">Conclusion</h4>
+          <p class="text-zinc-600">
+            "The Wayfarer’s World" celebrates the joy of discovering hidden gems
+            and the unique experiences they offer. From uncharted territories
+            and local cultures to the challenges and rewards of exploration,
+            these tales of discovery highlight the richness of travel beyond the
+            conventional.
+          </p>
+          <p class="text-zinc-600">
+            As Saint Augustine wisely said, “The world is a book, and those who
+            do not travel read only one page.” Embrace the journey to uncover
+            hidden gems, and let your adventures open new chapters in your
+            travel story, filled with wonder and discovery.
+          </p>
+        </article>
+
+        <aside class="md:col-span-3 space-y-5 h-full">
+          <!-- aside Countries  -->
+          <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
+            <h6 class="text-xl font-bold mb-3">Latest Blogs</h6>
+            <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
+              <div class="w-16 h-full bg-red-600 rounded-xl"></div>
+            </div>
+            <ul class="space-y-5 flex flex-col capitalize">
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/travel/t1.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    Globetrotter’s Gazette: Chronicles of a World Explorer
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/travel/t2.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    similarly write for
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/travel/t3.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    Wanderlust Writings: Tales from the Open Road
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/travel/t4.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    The Wayfarer’s World: Discovering Hidden Gems
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../swiper.js"></script>
+    <script src="../index.js"></script>
+  </body>
+</html>

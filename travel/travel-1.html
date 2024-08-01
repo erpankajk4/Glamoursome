@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glamoursome</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4d509971f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../tailwind.js"></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body class="bg-zinc-50 antialiased roboto-regular">
+    <header class="w-full bg-white border-b border-zinc-200 fixed top-0 z-50">
+      <!-- desktop navbar   -->
+      <nav
+        class="max-w-screen-2xl w-full mx-auto flex justify-between items-center px-5 md:px-16 lg:px-36 py-5 max-md:hidden"
+      >
+        <!-- logo  -->
+        <div class="cursor-pointer">
+          <a src="/" class="text-xl font-bold">GLAMOURSOME</a>
+        </div>
+        <ul class="flex gap-5 uppercase">
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">Home</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">Fashion</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">relationship</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">lifestyle</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">beauty</li></a
+          >
+          <a src="#" class="hover:text-red-600"
+            ><li class="cursor-pointer">travel</li></a
+          >
+        </ul>
+      </nav>
+      <!-- mobile navbar   -->
+      <nav class="w-full grid grid-cols-2 relative bg-white md:hidden z-50 p-5">
+        <!-- logo  -->
+        <div>
+          <p class="text-xl font-bold">GLAMOURSOME</p>
+        </div>
+        <div class="off-screen-menu p-5 flex flex-col gap-5">
+          <ul class="w-full open-dropdown flex-col items-center">
+            <div>
+              <p class="text-xl font-bold">GLAMOURSOME</p>
+            </div>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">Home</a>
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">Fashion</a>
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer"
+                >relationship</a
+              >
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">lifestyle</a>
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">beauty</a>
+            </li>
+            <li>
+              <a src="#" class="hover:text-red-600 cursor-pointer">travel</a>
+            </li>
+          </ul>
+        </div>
+        <nav>
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </nav>
+    </header>
+    <!-- Banner 3 Card Section  -->
+    <section
+      class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-36 py-10 pt-24"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-10 gap-5 relative">
+        <article class="md:col-span-7 space-y-8 text-zinc-900 text-justify">
+          <img
+            src="../assets/travel/t1.jpg"
+            alt="blog"
+            class="w-full h-[20rem] md:h-[28rem] object-cover"
+          />
+          <div>
+            <p class="text-sm capitalize text-red-600">travel</p>
+            <h2 class="text-3xl font-bold mb-3">
+              Globetrotter’s Gazette: Chronicles of a World Explorer
+            </h2>
+            <p class="text-sm text-zinc-400">01/08/2024 | By Sam</p>
+          </div>
+          <p class="text-zinc-600">
+            The world is a vast, diverse place filled with endless opportunities
+            for exploration and adventure. From bustling cityscapes to serene
+            landscapes, each destination offers a unique glimpse into different
+            cultures, histories, and experiences. This chronicle of a world
+            explorer delves into the joys and challenges of global travel,
+            sharing insights and stories from various corners of the globe.
+          </p>
+          <p class="text-2xl text-center">
+            “The world is a book, and those who do not travel read only one
+            page.” – Saint Augustine
+          </p>
+          <h4 class="mt-5 text-xl font-bold">
+            The Joys of Discovering New Cultures
+          </h4>
+          <p class="text-zinc-600">
+            One of the most enriching aspects of travel is immersing yourself in
+            new cultures. Every country and region has its own unique
+            traditions, cuisines, and ways of life that offer valuable lessons
+            and memorable experiences. Whether it's savoring exotic dishes,
+            participating in local festivals, or learning a new language, each
+            cultural encounter broadens your perspective and deepens your
+            understanding of the world.
+          </p>
+          <p class="text-zinc-600">
+            Engaging with locals and exploring off-the-beaten-path destinations
+            often leads to the most authentic experiences. Embrace opportunities
+            to interact with residents, visit local markets, and explore less
+            touristy areas. These interactions provide a genuine insight into
+            the daily lives and customs of the people you meet, enhancing your
+            travel experience and fostering meaningful connections.
+          </p>
+          <h4 class="mt-5 text-xl font-bold">
+            Navigating the Challenges of Global Travel
+          </h4>
+          <p class="text-zinc-600">
+            While travel is a source of joy and discovery, it also comes with
+            its share of challenges. Navigating unfamiliar environments,
+            adapting to different cultures, and managing logistics can sometimes
+            be overwhelming. However, these challenges are part of what makes
+            travel rewarding.
+          </p>
+          <p class="text-zinc-600">
+            Preparing for travel with research and planning can help mitigate
+            some of these challenges. Understanding local customs, having a
+            basic knowledge of the language, and being aware of cultural norms
+            can make interactions smoother and more enjoyable. Additionally,
+            staying flexible and open-minded allows you to adapt to unexpected
+            situations and make the most of your travel experiences.
+          </p>
+          <div class="grid grid-cols-2 gap-5">
+            <img
+              src="../assets/travel/t11.jpg"
+              alt="blog"
+              class="w-full h-64 object-cover"
+            />
+            <img
+              src="../assets/travel/t12.jpg"
+              alt="blog"
+              class="w-full h-64 object-cover"
+            />
+          </div>
+          <h4 class="mt-5 text-xl font-bold">
+            The Art of Capturing Travel Memories
+          </h4>
+          <p class="text-zinc-600">
+            Preserving travel memories through photos, journals, and souvenirs
+            adds a personal touch to your experiences. Capturing the essence of
+            each destination, whether through scenic landscapes, vibrant street
+            scenes, or candid moments, allows you to relive your adventures long
+            after you return home.
+          </p>
+          <p class="text-zinc-600">
+            Keeping a travel journal can also be a meaningful way to document
+            your thoughts, reflections, and experiences. Write about your
+            impressions of different places, the people you met, and the
+            emotions you felt. These written accounts, combined with your photos
+            and mementos, create a rich tapestry of memories that you can
+            cherish and share with others.
+          </p>
+          <h4 class="mt-5 text-xl font-bold">
+            Embracing Sustainable Travel Practices
+          </h4>
+          <p class="text-zinc-600">
+            As travelers, it is important to consider the impact of our journeys
+            on the environment and local communities. Embracing sustainable
+            travel practices helps minimize our footprint and contributes to the
+            preservation of the destinations we visit.
+          </p>
+          <p class="text-zinc-600">
+            Choose eco-friendly accommodations, support local businesses, and
+            reduce waste by minimizing single-use plastics. Engage in
+            responsible tourism by respecting local cultures, wildlife, and
+            natural habitats. By making conscious choices, you can help ensure
+            that the beauty of our planet and the richness of its cultures are
+            preserved for future generations.
+          </p>
+          <h4 class="mt-5 text-xl font-bold">
+            The Transformative Power of Travel
+          </h4>
+          <p class="text-zinc-600">
+            Travel has the power to transform us in profound ways. It broadens
+            our horizons, challenges our assumptions, and inspires personal
+            growth. Each journey offers new perspectives, opportunities for
+            self-discovery, and a deeper appreciation for the diversity and
+            interconnectedness of our world.
+          </p>
+          <p class="text-zinc-600">
+            Embrace the transformative potential of travel by approaching each
+            adventure with curiosity, openness, and a willingness to learn. Let
+            your experiences shape your understanding of the world and enrich
+            your life in ways that extend beyond the boundaries of your travels.
+          </p>
+          <h4 class="mt-5 text-xl font-bold">Conclusion</h4>
+          <p class="text-zinc-600">
+            The chronicles of a world explorer are filled with stories of
+            discovery, challenge, and transformation. From the joys of cultural
+            immersion to the art of capturing memories and embracing sustainable
+            practices, travel offers a wealth of experiences that enrich our
+            lives and broaden our perspectives.
+          </p>
+          <p class="text-zinc-600">
+            As Saint Augustine aptly said, “The world is a book, and those who
+            do not travel read only one page.” Embrace the adventure of
+            exploration, celebrate the diverse beauty of our planet, and let
+            each journey inspire and transform you in ways that last a lifetime.
+          </p>
+        </article>
+
+        <aside class="md:col-span-3 space-y-5 h-full">
+          <!-- aside Countries  -->
+          <div class="w-full bg-gray-100 rounded-md p-5 md:p-10 sticky top-20">
+            <h6 class="text-xl font-bold mb-3">Latest Blogs</h6>
+            <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
+              <div class="w-16 h-full bg-red-600 rounded-xl"></div>
+            </div>
+            <ul class="space-y-5 flex flex-col capitalize">
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/travel/t1.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    Globetrotter’s Gazette: Chronicles of a World Explorer
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/travel/t2.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    similarly write for
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/travel/t3.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    Wanderlust Writings: Tales from the Open Road
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+              <li class="cursor-pointer space-y-2">
+                <img
+                  src="../assets/travel/t4.jpg"
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                />
+                <div>
+                  <h2 class="text-lg font-bold line-clamp-2">
+                    The Wayfarer’s World: Discovering Hidden Gems
+                  </h2>
+                  <p class="text-sm text-zinc-500">1 Aug, 2024 | By Admin</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../swiper.js"></script>
+    <script src="../index.js"></script>
+  </body>
+</html>
